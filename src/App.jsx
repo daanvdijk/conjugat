@@ -334,7 +334,8 @@ export default function App() {
       }
     };
     window.addEventListener("visibilitychange", handleVisibility);
-    return () => window.removeEventListener("visibilitychange", handleVisibility);
+    return () =>
+      window.removeEventListener("visibilitychange", handleVisibility);
   }, [currentPrompt]);
 
   useEffect(() => {
@@ -436,10 +437,21 @@ export default function App() {
       theme: isCatalanTheme ? "catalan" : "default",
       regular_only: verbFilters.regular && !verbFilters.irregular,
       irregular_on: verbFilters.irregular,
-      tenses_enabled: Object.keys(enabledTenses).filter((key) => enabledTenses[key]),
-      persons_enabled: Object.keys(enabledPersons).filter((key) => enabledPersons[key]),
+      tenses_enabled: Object.keys(enabledTenses).filter(
+        (key) => enabledTenses[key],
+      ),
+      persons_enabled: Object.keys(enabledPersons).filter(
+        (key) => enabledPersons[key],
+      ),
     });
-  }, [dailyGoal, isCatalanTheme, verbFilters, enabledTenses, enabledPersons, analyticsEnabled]);
+  }, [
+    dailyGoal,
+    isCatalanTheme,
+    verbFilters,
+    enabledTenses,
+    enabledPersons,
+    analyticsEnabled,
+  ]);
 
   useEffect(() => {
     if (!expectedAnswer) return undefined;
@@ -876,7 +888,7 @@ export default function App() {
         <div className="footnote">
           <span>Conjugat · © 2026 · fet per Daan</span>
           {easterEggVisible && (
-            <span className="egg">· Ou de Pasqua: Puigdemont</span>
+            <span className="egg">· Visca Catalunya lliure.</span>
           )}
           <button
             type="button"
