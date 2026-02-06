@@ -262,6 +262,12 @@ body[data-theme="catalan"] .goal-pill.on {
   color: #b5a999;
 }
 
+body[data-theme="catalan"] .pill.on {
+  background: rgba(201, 37, 45, 0.16);
+  color: #c9252d;
+  border-color: rgba(201, 37, 45, 0.3);
+}
+
 .goal-progress {
   margin-top: 10px;
   color: var(--muted);
