@@ -1,0 +1,23 @@
+{
+  "name": "conjugat",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:verbs": "node scripts/build-verbs.mjs",
+    "build:verbs:validate": "node scripts/build-verbs.mjs --validate"
+  },
+  "dependencies": {
+    "@amplitude/analytics-browser": "^1.12.0",
+    "@amplitude/unified": "^1.0.0-beta.32",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0"
+  }
+}

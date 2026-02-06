@@ -1,0 +1,1202 @@
+[
+  {
+    "infinitive": "tornar",
+    "translation": "to return",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "pelar",
+    "translation": "to peel",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "sentir",
+    "translation": "to sense",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "semblar",
+    "translation": "to seem",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "arribar",
+    "translation": "to arrive",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "donar",
+    "translation": "to give",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "pensar",
+    "translation": "to think",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "deixar",
+    "translation": "to leave",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "passar",
+    "translation": "to pass",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "trobar",
+    "translation": "to find",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "mirar",
+    "translation": "to look",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "matar",
+    "translation": "to kill",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "parlar",
+    "translation": "to speak",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "quedar",
+    "translation": "to remain",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "moldre",
+    "translation": "to grind",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "acabar",
+    "translation": "to finish",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "preguntar",
+    "translation": "to ask",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "entrar",
+    "translation": "to enter",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "portar",
+    "translation": "to wear",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "demanar",
+    "translation": "to ask for",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "agafar",
+    "translation": "to grasp",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "recordar",
+    "translation": "to remember",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "vestir",
+    "translation": "to dress",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "esperar",
+    "translation": "to wait",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "podar",
+    "translation": "to prune",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "calar",
+    "translation": "to set",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "continuar",
+    "translation": "to continue",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "obrir",
+    "translation": "to open",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "viure",
+    "translation": "to live",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "parar",
+    "translation": "to stop",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "fondre",
+    "translation": "to melt",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "seguir",
+    "translation": "to follow",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "entendre",
+    "translation": "to understand",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "agradar",
+    "translation": "to like",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "respondre",
+    "translation": "to answer",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "aconseguir",
+    "translation": "to obtain",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "deure",
+    "translation": "to owe",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "somriure",
+    "translation": "to smile",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "intentar",
+    "translation": "to try",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "servir",
+    "translation": "to useful",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "perdre",
+    "translation": "to lose",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "cridar",
+    "translation": "to shout",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "presentar",
+    "translation": "to present",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "tractar",
+    "translation": "to deal",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "mantenir",
+    "translation": "to keep",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "permetre",
+    "translation": "to allow",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "morir",
+    "translation": "to die",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "treballar",
+    "translation": "to work",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "considerar",
+    "translation": "to consider",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "partir",
+    "translation": "to split",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "necessitar",
+    "translation": "to need",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "asseure",
+    "translation": "to sit down",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "menjar",
+    "translation": "to eat",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "escriure",
+    "translation": "to write",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "córrer",
+    "translation": "to run",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "suposar",
+    "translation": "to suppose",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "llegir",
+    "translation": "to read",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "dirigir",
+    "translation": "to manage",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "convertir",
+    "translation": "to convert",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "aparèixer",
+    "translation": "to appear",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "acostar",
+    "translation": "to approach",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "vendre",
+    "translation": "to sell",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "estimar",
+    "translation": "to estimate",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "produir",
+    "translation": "to present",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "pujar",
+    "translation": "to get into",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "decidir",
+    "translation": "to decide",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "girar",
+    "translation": "to turn",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "rebre",
+    "translation": "to receive",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "dormir",
+    "translation": "to sleep",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "afegir",
+    "translation": "to add",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "ajudar",
+    "translation": "to help",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "caldre",
+    "translation": "to must",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "volar",
+    "translation": "to fly",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "disposar",
+    "translation": "to arrange",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "aturar",
+    "translation": "to stop",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "situar",
+    "translation": "to place",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "formar",
+    "translation": "to form",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "escoltar",
+    "translation": "to listen",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "imaginar",
+    "translation": "to imagine",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "guanyar",
+    "translation": "to win",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "marxar",
+    "translation": "to march",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "comptar",
+    "translation": "to count",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "baixar",
+    "translation": "to download",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "observar",
+    "translation": "to observe",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "ocupar",
+    "translation": "to occupy",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "mostrar",
+    "translation": "to show",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "canviar",
+    "translation": "to change",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "comprendre",
+    "translation": "to comprise",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "oferir",
+    "translation": "to offer",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "oblidar",
+    "translation": "to forget",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "crear",
+    "translation": "to create",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "abandonar",
+    "translation": "to abandon",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "acompanyar",
+    "translation": "to accompany",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "acceptar",
+    "translation": "to accept",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "anomenar",
+    "translation": "to name",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "resultar",
+    "translation": "to result",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "esdevenir",
+    "translation": "to become",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "basar",
+    "translation": "to base",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "assegurar",
+    "translation": "to ensure",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "comprar",
+    "translation": "to buy",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "obtenir",
+    "translation": "to obtain",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "evitar",
+    "translation": "to avoid",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "reconèixer",
+    "translation": "to recognize",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "unir",
+    "translation": "to join",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "caminar",
+    "translation": "to walk",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "descobrir",
+    "translation": "to discover",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "establir",
+    "translation": "to establish",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "seure",
+    "translation": "to sit down",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "contestar",
+    "translation": "to answer",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "assenyalar",
+    "translation": "to point out",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "notar",
+    "translation": "to notice",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "sorprendre",
+    "translation": "to surprise",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "néixer",
+    "translation": "to be born",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "repetir",
+    "translation": "to repeat",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "fugir",
+    "translation": "to run away",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "plorar",
+    "translation": "to cry",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "existir",
+    "translation": "to exist",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "casar",
+    "translation": "to marry",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "representar",
+    "translation": "to represent",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "patir",
+    "translation": "to suffer",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "beure",
+    "translation": "to drink",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "utilitzar",
+    "translation": "to use",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "espanyar",
+    "translation": "to force",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "construir",
+    "translation": "to construct",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "omplir",
+    "translation": "to fill",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "estudiar",
+    "translation": "to study",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "desaparèixer",
+    "translation": "to disappear",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "separar",
+    "translation": "to separate",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "sopar",
+    "translation": "to dinner",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "ensenyar",
+    "translation": "to teach",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "parir",
+    "translation": "to give birth",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "aprendre",
+    "translation": "to learn",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "encendre",
+    "translation": "to turn on",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "dubtar",
+    "translation": "to doubt",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "obrar",
+    "translation": "to act",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "despertar",
+    "translation": "to wake",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "esmentar",
+    "translation": "to mention",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "iniciar",
+    "translation": "to begin",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "desitjar",
+    "translation": "to desire",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "demostrar",
+    "translation": "to demonstrate",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "recollir",
+    "translation": "to gather",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "constituir",
+    "translation": "to constitute",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "fixar",
+    "translation": "to fix",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "aprofitar",
+    "translation": "to take advantadge",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "travessar",
+    "translation": "to cross",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "callar",
+    "translation": "to shut up",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "preveure",
+    "translation": "to foresee",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "interessar",
+    "translation": "to interest",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "proposar",
+    "translation": "to propose",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "celebrar",
+    "translation": "to celebrate",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "informar",
+    "translation": "to inform",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "provar",
+    "translation": "to test",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "contemplar",
+    "translation": "to survey",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "saltar",
+    "translation": "to jump",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "realitzar",
+    "translation": "to realize",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "clavar",
+    "translation": "to stick",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "sonar",
+    "translation": "to sound",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "penjar",
+    "translation": "to hang",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "protegir",
+    "translation": "to protect",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "actuar",
+    "translation": "to act",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "determinar",
+    "translation": "to determine",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "anunciar",
+    "translation": "to announce",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "estirar",
+    "translation": "to stretch",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "estendre",
+    "translation": "to lay",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "incloure",
+    "translation": "to include",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "guardar",
+    "translation": "to keep",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "reunir",
+    "translation": "to gather",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "apartar",
+    "translation": "to move",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "afirmar",
+    "translation": "to assert",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "ferir",
+    "translation": "to wound",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "insistir",
+    "translation": "to insist",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "lluitar",
+    "translation": "to fight",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "afectar",
+    "translation": "to affect",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "tirar",
+    "translation": "to pull",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "allunyar",
+    "translation": "to move away",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "faltar",
+    "translation": "to fail",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "cantar",
+    "translation": "to sing",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "preocupar",
+    "translation": "to preoccupy",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "créixer",
+    "translation": "to grow",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "participar",
+    "translation": "to take part",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "costar",
+    "translation": "to cost",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "aguantar",
+    "translation": "to bear",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "dinar",
+    "translation": "to lunch",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "restar",
+    "translation": "to stay",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "complir",
+    "translation": "to accomplish",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "referir",
+    "translation": "to refer",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "augmentar",
+    "translation": "to increase",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "conduir",
+    "translation": "to drive",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "pertànyer",
+    "translation": "to belong",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "declarar",
+    "translation": "to declare",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "tallar",
+    "translation": "to cut off",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "defensar",
+    "translation": "to defend",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "compartir",
+    "translation": "to share",
+    "regular": true,
+    "group": "ir"
+  },
+  {
+    "infinitive": "escapar",
+    "translation": "to escape",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "limitar",
+    "translation": "to limit",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "perdonar",
+    "translation": "to forgive",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "acostumar",
+    "translation": "to accustom",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "robar",
+    "translation": "to steal",
+    "regular": true,
+    "group": "ar"
+  },
+  {
+    "infinitive": "correspondre",
+    "translation": "to correspond",
+    "regular": true,
+    "group": "er"
+  },
+  {
+    "infinitive": "respirar",
+    "translation": "to breathe",
+    "regular": true,
+    "group": "ar"
+  }
+]
