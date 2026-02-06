@@ -463,4 +463,45 @@ body[data-theme="catalan"] .pill.on {
   .controls {
     justify-content: flex-start;
   }
+
+  body {
+    align-items: flex-start;
+    padding-top: 16px;
+  }
+
+  .card {
+    margin-top: 8px;
+  }
+
+  .input-area {
+    scroll-margin-top: 80px;
+  }
+
+  .title {
+    margin-bottom: 16px;
+    letter-spacing: 0.16em;
+  }
+
+  .input-area {
+    padding: 14px 16px;
+    min-height: 64px;
+  }
+
+  .typed {
+    font-size: 26px;
+    letter-spacing: 0.02em;
+  }
+
+  .placeholder {
+    font-size: 16px;
+  }
+
+  .ghost-input {
+    font-size: 26px;
+    padding: 14px 16px;
+  }
+
+  .settings-accordion summary {
+    letter-spacing: 0.14em;
+  }
 }
