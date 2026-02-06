@@ -1,18 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import verbs from "./data/verbs.json";
-import {
-  initAnalytics,
-  setAnalyticsEnabled,
-  trackEvent,
-} from "./analytics.js";
+import { initAnalytics, setAnalyticsEnabled, trackEvent } from "./analytics.js";
 
 const PERSONS = ["jo", "tu", "ell", "nosaltres", "vosaltres", "ells"];
-const TENSES = [
-  "present",
-  "imperfect",
-  "future",
-  "conditional",
-];
+const TENSES = ["present", "imperfect", "future", "conditional"];
 const GOALS = [25, 50, 100];
 const DEFAULT_ANALYTICS_ENABLED = Boolean(import.meta.env.VITE_AMPLITUDE_KEY);
 const FEEDBACK_EMAIL = import.meta.env.VITE_FEEDBACK_EMAIL;
@@ -173,7 +164,9 @@ function getConjugation(verb, tense, person) {
   }
   const group = verb.group ?? getVerbGroup(verb.infinitive);
   if (tense === "present") {
-    return verb.present?.[person] ?? regularPresent(verb.infinitive, group, person);
+    return (
+      verb.present?.[person] ?? regularPresent(verb.infinitive, group, person)
+    );
   }
   if (tense === "imperfect") {
     return regularImperfect(verb.infinitive, group, person);
@@ -205,10 +198,17 @@ function pickNextPrompt(enabledPersons, enabledTenses, verbFilters, lastKey) {
   let next = null;
   let tries = 0;
   while (!next || (lastKey && next.key === lastKey && tries < 10)) {
-    const verb = filteredVerbs[Math.floor(Math.random() * filteredVerbs.length)];
+    const verb =
+      filteredVerbs[Math.floor(Math.random() * filteredVerbs.length)];
     const person = enabled[Math.floor(Math.random() * enabled.length)];
-    const tense = enabledTenseList[Math.floor(Math.random() * enabledTenseList.length)];
-    next = { verb, person, tense, key: `${verb.infinitive}-${person}-${tense}` };
+    const tense =
+      enabledTenseList[Math.floor(Math.random() * enabledTenseList.length)];
+    next = {
+      verb,
+      person,
+      tense,
+      key: `${verb.infinitive}-${person}-${tense}`,
+    };
     tries += 1;
   }
   return next;
@@ -261,7 +261,9 @@ export default function App() {
   const [dailyDateKey, setDailyDateKey] = useState(getLocalDateKey());
   const [confettiBurst, setConfettiBurst] = useState(0);
   const [confettiBig, setConfettiBig] = useState(false);
-  const [analyticsEnabled, setAnalyticsEnabledState] = useState(DEFAULT_ANALYTICS_ENABLED);
+  const [analyticsEnabled, setAnalyticsEnabledState] = useState(
+    DEFAULT_ANALYTICS_ENABLED,
+  );
   const [hintsUsed, setHintsUsed] = useState(0);
   const [easterEggVisible, setEasterEggVisible] = useState(false);
   const [titleClicks, setTitleClicks] = useState(0);
@@ -273,22 +275,37 @@ export default function App() {
     return getConjugation(
       currentPrompt.verb,
       currentPrompt.tense,
-      currentPrompt.person
+      currentPrompt.person,
     );
   }, [currentPrompt]);
 
   useEffect(() => {
     if (!currentPrompt) {
-      setCurrentPrompt(pickNextPrompt(enabledPersons, enabledTenses, verbFilters, null));
+      setCurrentPrompt(
+        pickNextPrompt(enabledPersons, enabledTenses, verbFilters, null),
+      );
     }
   }, [currentPrompt, enabledPersons, enabledTenses, verbFilters]);
 
   useEffect(() => {
-    if (currentPrompt && !isPromptAllowed(currentPrompt, enabledPersons, enabledTenses, verbFilters)) {
+    if (
+      currentPrompt &&
+      !isPromptAllowed(
+        currentPrompt,
+        enabledPersons,
+        enabledTenses,
+        verbFilters,
+      )
+    ) {
       setInputValue("");
       setHintedIndices(new Set());
       setCurrentPrompt(
-        pickNextPrompt(enabledPersons, enabledTenses, verbFilters, currentPrompt.key)
+        pickNextPrompt(
+          enabledPersons,
+          enabledTenses,
+          verbFilters,
+          currentPrompt.key,
+        ),
       );
     }
   }, [currentPrompt, enabledPersons, enabledTenses, verbFilters]);
@@ -362,14 +379,22 @@ export default function App() {
 
   useEffect(() => {
     document.body.dataset.theme = isCatalanTheme ? "catalan" : "default";
-    localStorage.setItem("conjugat_theme", isCatalanTheme ? "catalan" : "default");
+    localStorage.setItem(
+      "conjugat_theme",
+      isCatalanTheme ? "catalan" : "default",
+    );
     trackEvent("settings_changed", { setting: "theme", value: isCatalanTheme });
   }, [isCatalanTheme]);
 
   useEffect(() => {
     localStorage.setItem(
       "conjugat_settings",
-      JSON.stringify({ enabledPersons, enabledTenses, verbFilters, analyticsEnabled })
+      JSON.stringify({
+        enabledPersons,
+        enabledTenses,
+        verbFilters,
+        analyticsEnabled,
+      }),
     );
   }, [enabledPersons, enabledTenses, verbFilters, analyticsEnabled]);
 
@@ -382,7 +407,10 @@ export default function App() {
     if (!expectedAnswer) return undefined;
     const inputLower = inputValue.toLowerCase();
     const expectedLower = expectedAnswer.toLowerCase();
-    if (inputLower === expectedLower && inputLower.length === expectedLower.length) {
+    if (
+      inputLower === expectedLower &&
+      inputLower.length === expectedLower.length
+    ) {
       const timeout = setTimeout(() => {
         const todayKey = getLocalDateKey();
         setDailyDateKey((prevDate) => {
@@ -405,7 +433,7 @@ export default function App() {
           enabledPersons,
           enabledTenses,
           verbFilters,
-          currentPrompt?.key
+          currentPrompt?.key,
         );
         setInputValue("");
         setHintedIndices(new Set());
@@ -442,7 +470,10 @@ export default function App() {
           next.delete(index);
           continue;
         }
-        if (inputValue[index].toLowerCase() !== expectedAnswer[index]?.toLowerCase()) {
+        if (
+          inputValue[index].toLowerCase() !==
+          expectedAnswer[index]?.toLowerCase()
+        ) {
           next.delete(index);
         }
       }
@@ -459,7 +490,11 @@ export default function App() {
       if (nextValue.length > expectedAnswer.length) {
         nextValue = nextValue.slice(0, expectedAnswer.length);
       }
-      const redIndex = findFirstRedIndex(nextValue, expectedAnswer, hintedIndices);
+      const redIndex = findFirstRedIndex(
+        nextValue,
+        expectedAnswer,
+        hintedIndices,
+      );
       if (redIndex !== -1) {
         nextValue = nextValue.slice(0, redIndex + 1);
       }
@@ -513,7 +548,8 @@ export default function App() {
     const maxDistance = confettiBig ? 200 : 120;
     return Array.from({ length: count }).map((_, index) => {
       const angle = Math.random() * Math.PI * 2;
-      const distance = minDistance + Math.random() * (maxDistance - minDistance);
+      const distance =
+        minDistance + Math.random() * (maxDistance - minDistance);
       const x = Math.cos(angle) * distance;
       const y = Math.sin(angle) * distance - (confettiBig ? 60 : 30);
       const rotation = Math.random() * 260;
@@ -593,7 +629,8 @@ export default function App() {
             {currentPrompt.verb.infinitive} — {currentPrompt.verb.translation}
           </div>
           <div className="meta">
-            {PERSON_LABELS[currentPrompt.person]} · {TENSE_LABELS[currentPrompt.tense]}
+            {PERSON_LABELS[currentPrompt.person]} ·{" "}
+            {TENSE_LABELS[currentPrompt.tense]}
           </div>
         </div>
 
@@ -607,19 +644,32 @@ export default function App() {
             )}
             {inputValue.split("").map((char, index) => {
               const expectedChar = expectedAnswer[index] ?? "";
-              const status = getStatus(char, expectedChar, hintedIndices.has(index));
+              const status = getStatus(
+                char,
+                expectedChar,
+                hintedIndices.has(index),
+              );
               return (
                 <span key={`${char}-${index}`} className={`char ${status}`}>
                   {char}
                 </span>
               );
             })}
-            {inputValue.length > 0 && <span className="caret" aria-hidden="true" />}
+            {inputValue.length > 0 && (
+              <span className="caret" aria-hidden="true" />
+            )}
           </div>
           {confettiBurst > 0 && (
-            <div key={confettiBurst} className={`confetti ${confettiBig ? "big" : ""}`}>
+            <div
+              key={confettiBurst}
+              className={`confetti ${confettiBig ? "big" : ""}`}
+            >
               {confettiPieces.map((piece) => (
-                <span key={piece.key} className="confetti-piece" style={piece.style} />
+                <span
+                  key={piece.key}
+                  className="confetti-piece"
+                  style={piece.style}
+                />
               ))}
             </div>
           )}
@@ -655,7 +705,10 @@ export default function App() {
             <div className="settings-title">Persones</div>
             <div className="settings-row">
               {PERSONS.map((person) => (
-                <label key={person} className={`pill ${enabledPersons[person] ? "on" : "off"}`}>
+                <label
+                  key={person}
+                  className={`pill ${enabledPersons[person] ? "on" : "off"}`}
+                >
                   <input
                     type="checkbox"
                     checked={enabledPersons[person]}
@@ -671,7 +724,10 @@ export default function App() {
             <div className="settings-title">Temps</div>
             <div className="settings-row">
               {TENSES.map((tense) => (
-                <label key={tense} className={`pill ${enabledTenses[tense] ? "on" : "off"}`}>
+                <label
+                  key={tense}
+                  className={`pill ${enabledTenses[tense] ? "on" : "off"}`}
+                >
                   <input
                     type="checkbox"
                     checked={enabledTenses[tense]}
@@ -690,7 +746,10 @@ export default function App() {
                 { key: "regular", label: "regular" },
                 { key: "irregular", label: "irregular" },
               ].map((item) => (
-                <label key={item.key} className={`pill ${verbFilters[item.key] ? "on" : "off"}`}>
+                <label
+                  key={item.key}
+                  className={`pill ${verbFilters[item.key] ? "on" : "off"}`}
+                >
                   <input
                     type="checkbox"
                     checked={verbFilters[item.key]}
@@ -745,7 +804,9 @@ export default function App() {
 
         <div className="footnote">
           <span>Conjugat · © 2026 · fet per Daan</span>
-          {easterEggVisible && <span className="egg">· Ou de Pasqua: Puigdemont</span>}
+          {easterEggVisible && (
+            <span className="egg">· Ou de Pasqua: Puigdemont</span>
+          )}
           <button
             type="button"
             className="feedback-link"
@@ -765,9 +826,7 @@ export default function App() {
         >
           <div className="modal" onClick={(event) => event.stopPropagation()}>
             <div className="modal-title">Explica l'error</div>
-            <p className="modal-text">
-              Encara no tenim backend. Envia'ns un correu amb aquest text.
-            </p>
+            <p className="modal-text">Envia'ns un correu amb aquest text.</p>
             <textarea
               ref={feedbackRef}
               className="modal-input"
@@ -777,11 +836,19 @@ export default function App() {
               placeholder="Quin verb, quina forma, i què hauria de dir?"
             />
             <div className="modal-actions">
-              <button type="button" className="goal-pill off" onClick={() => setFeedbackOpen(false)}>
+              <button
+                type="button"
+                className="goal-pill off"
+                onClick={() => setFeedbackOpen(false)}
+              >
                 Tanca
               </button>
               {FEEDBACK_EMAIL && (
-                <button type="button" className="goal-pill on" onClick={handleSendFeedback}>
+                <button
+                  type="button"
+                  className="goal-pill on"
+                  onClick={handleSendFeedback}
+                >
                   Envia per correu
                 </button>
               )}
