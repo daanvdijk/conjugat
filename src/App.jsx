@@ -289,6 +289,8 @@ export default function App() {
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [feedbackText, setFeedbackText] = useState("");
   const [configError, setConfigError] = useState(false);
+  const [lastResult, setLastResult] = useState(null);
+  const [showLastResult, setShowLastResult] = useState(false);
 
   const expectedAnswer = useMemo(() => {
     if (!currentPrompt) return "";
@@ -512,6 +514,13 @@ export default function App() {
           verbFilters,
           currentPrompt?.key,
         );
+        setLastResult({
+          verb: currentPrompt?.verb?.infinitive,
+          translation: currentPrompt?.verb?.translation,
+          person: currentPrompt?.person,
+          tense: currentPrompt?.tense,
+          answer: expectedAnswer,
+        });
         setInputValue("");
         setHintedIndices(new Set());
         setCurrentPrompt(next);
@@ -824,10 +833,31 @@ export default function App() {
           <button className="hint-button" type="button" onClick={handleHint}>
             Pista (Hint)
           </button>
+          <button
+            className="ghost-button"
+            type="button"
+            onClick={() => setShowLastResult((prev) => !prev)}
+            disabled={!lastResult}
+          >
+            Mostra l'anterior
+          </button>
         </div>
+
+        {showLastResult && lastResult && (
+          <div className="last-result">
+            <div className="last-title">
+              {lastResult.verb} — {lastResult.translation}
+            </div>
+            <div className="last-meta">
+              {PERSON_LABELS[lastResult.person]} · {TENSE_LABELS[lastResult.tense]}
+            </div>
+            <div className="last-answer">{lastResult.answer}</div>
+          </div>
+        )}
 
         <details className="settings-accordion">
           <summary>Configuració</summary>
+          <div className="settings-panel">
           {configError && (
             <div className="settings-warning">
               No hi ha cap combinació disponible per aquesta configuració.
@@ -932,6 +962,7 @@ export default function App() {
                 Colors catalans
               </button>
             </div>
+          </div>
           </div>
         </details>
 
