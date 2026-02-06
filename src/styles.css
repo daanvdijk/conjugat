@@ -322,6 +322,15 @@ body[data-theme="catalan"] .pill.on {
   transform: rotate(180deg) translateY(2px);
 }
 
+.settings-warning {
+  margin: 8px 0 4px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(198, 55, 45, 0.12);
+  color: var(--red);
+  font-size: 12px;
+}
+
 .settings {
   margin-top: 18px;
   border-top: none;

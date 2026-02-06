@@ -219,6 +219,19 @@ function pickNextPrompt(enabledPersons, enabledTenses, verbFilters, lastKey) {
   return next;
 }
 
+function hasAvailablePrompts(enabledPersons, enabledTenses, verbFilters) {
+  const enabled = PERSONS.filter((person) => enabledPersons[person]);
+  const enabledTenseList = TENSES.filter((tense) => enabledTenses[tense]);
+  if (enabled.length === 0 || enabledTenseList.length === 0) return false;
+  const filteredVerbs = verbs.filter((verb) => {
+    const regular = verb.regular !== false;
+    if (regular && !verbFilters.regular) return false;
+    if (!regular && !verbFilters.irregular) return false;
+    return true;
+  });
+  return filteredVerbs.length > 0;
+}
+
 function getLocalDateKey(date = new Date()) {
   const year = date.getFullYear();
   const month = String(date.getMonth() + 1).padStart(2, "0");
@@ -275,6 +288,7 @@ export default function App() {
   const [titleClicks, setTitleClicks] = useState(0);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [feedbackText, setFeedbackText] = useState("");
+  const [configError, setConfigError] = useState(false);
 
   const expectedAnswer = useMemo(() => {
     if (!currentPrompt) return "";
@@ -287,9 +301,18 @@ export default function App() {
 
   useEffect(() => {
     if (!currentPrompt) {
-      setCurrentPrompt(
-        pickNextPrompt(enabledPersons, enabledTenses, verbFilters, null),
+      const next = pickNextPrompt(
+        enabledPersons,
+        enabledTenses,
+        verbFilters,
+        null,
       );
+      if (next) {
+        setConfigError(false);
+        setCurrentPrompt(next);
+      } else {
+        setConfigError(true);
+      }
     }
   }, [currentPrompt, enabledPersons, enabledTenses, verbFilters]);
 
@@ -305,14 +328,18 @@ export default function App() {
     ) {
       setInputValue("");
       setHintedIndices(new Set());
-      setCurrentPrompt(
-        pickNextPrompt(
-          enabledPersons,
-          enabledTenses,
-          verbFilters,
-          currentPrompt.key,
-        ),
+      const next = pickNextPrompt(
+        enabledPersons,
+        enabledTenses,
+        verbFilters,
+        currentPrompt.key,
       );
+      if (next) {
+        setConfigError(false);
+        setCurrentPrompt(next);
+      } else {
+        setConfigError(true);
+      }
     }
   }, [currentPrompt, enabledPersons, enabledTenses, verbFilters]);
 
@@ -634,7 +661,13 @@ export default function App() {
     setEnabledPersons((prev) => {
       const enabledCount = Object.values(prev).filter(Boolean).length;
       if (prev[person] && enabledCount === 1) return prev;
-      return { ...prev, [person]: !prev[person] };
+      const next = { ...prev, [person]: !prev[person] };
+      if (!hasAvailablePrompts(next, enabledTenses, verbFilters)) {
+        setConfigError(true);
+        return prev;
+      }
+      setConfigError(false);
+      return next;
     });
     trackEvent("settings_changed", { setting: "person", value: person });
   };
@@ -651,7 +684,13 @@ export default function App() {
     setEnabledTenses((prev) => {
       const enabledCount = Object.values(prev).filter(Boolean).length;
       if (prev[tense] && enabledCount === 1) return prev;
-      return { ...prev, [tense]: !prev[tense] };
+      const next = { ...prev, [tense]: !prev[tense] };
+      if (!hasAvailablePrompts(enabledPersons, next, verbFilters)) {
+        setConfigError(true);
+        return prev;
+      }
+      setConfigError(false);
+      return next;
     });
     trackEvent("settings_changed", { setting: "tense", value: tense });
   };
@@ -673,7 +712,13 @@ export default function App() {
     setVerbFilters((prev) => {
       const enabledCount = Object.values(prev).filter(Boolean).length;
       if (prev[key] && enabledCount === 1) return prev;
-      return { ...prev, [key]: !prev[key] };
+      const next = { ...prev, [key]: !prev[key] };
+      if (!hasAvailablePrompts(enabledPersons, enabledTenses, next)) {
+        setConfigError(true);
+        return prev;
+      }
+      setConfigError(false);
+      return next;
     });
     trackEvent("settings_changed", { setting: "verb_filter", value: key });
   };
@@ -783,6 +828,11 @@ export default function App() {
 
         <details className="settings-accordion">
           <summary>Configuració</summary>
+          {configError && (
+            <div className="settings-warning">
+              No hi ha cap combinació disponible per aquesta configuració.
+            </div>
+          )}
 
           <div className="settings">
             <div className="settings-title">Persones</div>
