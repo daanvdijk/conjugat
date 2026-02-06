@@ -263,9 +263,9 @@ export default function App() {
   });
   const [enabledTenses, setEnabledTenses] = useState({
     present: true,
-    imperfect: true,
-    future: true,
-    conditional: true,
+    imperfect: false,
+    future: false,
+    conditional: false,
   });
   const [verbFilters, setVerbFilters] = useState({
     regular: true,
@@ -389,6 +389,18 @@ export default function App() {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [feedbackOpen]);
+
+  useEffect(() => {
+    if (feedbackOpen) return undefined;
+    const handleKeyDown = (event) => {
+      if (event.key === "?") {
+        event.preventDefault();
+        handleHint();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [feedbackOpen, expectedAnswer, inputValue, hintedIndices]);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("conjugat_theme");
@@ -833,14 +845,15 @@ export default function App() {
           <button className="hint-button" type="button" onClick={handleHint}>
             Pista (Hint)
           </button>
-          <button
-            className="ghost-button"
-            type="button"
-            onClick={() => setShowLastResult((prev) => !prev)}
-            disabled={!lastResult}
-          >
-            Mostra l'anterior
-          </button>
+          {lastResult && (
+            <button
+              className="ghost-button"
+              type="button"
+              onClick={() => setShowLastResult((prev) => !prev)}
+            >
+              Mostra l'anterior
+            </button>
+          )}
         </div>
 
         {showLastResult && lastResult && (
@@ -938,17 +951,6 @@ export default function App() {
                 </button>
               ))}
             </div>
-            <div className="goal-progress">
-              {Math.min(dailyProgress, dailyGoal)} / {dailyGoal} avui
-            </div>
-            <div className="goal-bar">
-              <div
-                className="goal-fill"
-                style={{
-                  width: `${Math.min(100, (dailyProgress / dailyGoal) * 100)}%`,
-                }}
-              />
-            </div>
           </div>
 
           <div className="settings">
@@ -966,19 +968,34 @@ export default function App() {
           </div>
         </details>
 
-        <div className="footnote">
-          <span>Conjugat · © 2026 · fet per Daan</span>
-          {easterEggVisible && (
-            <span className="egg">· Visca Catalunya lliure.</span>
-          )}
-          <button
-            type="button"
-            className="feedback-link"
-            onClick={() => setFeedbackOpen(true)}
-          >
-            Hi ha un error? Fes-m'ho saber
-          </button>
+        <div className="progress-inline progress-bottom">
+          <div className="progress-label">Objectiu diari</div>
+          <div className="progress-value">
+            {Math.min(dailyProgress, dailyGoal)} / {dailyGoal}
+          </div>
+          <div className="goal-bar">
+            <div
+              className="goal-fill"
+              style={{
+                width: `${Math.min(100, (dailyProgress / dailyGoal) * 100)}%`,
+              }}
+            />
+          </div>
         </div>
+      </div>
+
+      <div className="footnote page-footnote">
+        <span>Conjugat · © 2026 · fet per Daan</span>
+        {easterEggVisible && (
+          <span className="egg">· Visca Catalunya lliure.</span>
+        )}
+        <button
+          type="button"
+          className="feedback-link"
+          onClick={() => setFeedbackOpen(true)}
+        >
+          Hi ha un error? Fes-m'ho saber
+        </button>
       </div>
 
       {feedbackOpen && (

@@ -86,6 +86,38 @@ body[data-theme="catalan"] {
   margin-top: 6px;
 }
 
+.progress-inline {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.progress-label {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.progress-value {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.progress-inline .goal-bar {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+}
+
+.progress-bottom {
+  margin-top: 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 10px;
+}
+
 .input-area {
   position: relative;
   padding: 18px 20px;
@@ -349,9 +381,7 @@ body[data-theme="catalan"] .pill.on {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: rgba(0, 0, 0, 0.04);
-  padding: 10px 12px;
-  border-radius: 12px;
+  padding: 6px 0;
 }
 
 .settings-accordion summary::-webkit-details-marker {
@@ -407,6 +437,11 @@ body[data-theme="catalan"] .pill.on {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+}
+
+.page-footnote {
+  justify-content: center;
+  margin-top: 18px;
 }
 
 .egg {
