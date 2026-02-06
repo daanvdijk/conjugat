@@ -1,6 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import verbs from "./data/verbs.json";
-import { initAnalytics, setAnalyticsEnabled, trackEvent } from "./analytics.js";
+import {
+  identifyUserProperties,
+  initAnalytics,
+  setAnalyticsEnabled,
+  trackEvent,
+} from "./analytics.js";
 
 const PERSONS = ["jo", "tu", "ell", "nosaltres", "vosaltres", "ells"];
 const TENSES = ["present", "imperfect", "future", "conditional"];
@@ -234,6 +239,7 @@ function isPromptAllowed(prompt, enabledPersons, enabledTenses, verbFilters) {
 export default function App() {
   const inputRef = useRef(null);
   const feedbackRef = useRef(null);
+  const promptStartRef = useRef(null);
   const [enabledPersons, setEnabledPersons] = useState({
     jo: true,
     tu: true,
@@ -309,6 +315,27 @@ export default function App() {
       );
     }
   }, [currentPrompt, enabledPersons, enabledTenses, verbFilters]);
+
+  useEffect(() => {
+    if (!currentPrompt) return;
+    promptStartRef.current = Date.now();
+    trackEvent("prompt_started", {
+      verb: currentPrompt.verb.infinitive,
+      person: currentPrompt.person,
+      tense: currentPrompt.tense,
+    });
+  }, [currentPrompt]);
+
+  useEffect(() => {
+    if (!currentPrompt) return;
+    const handleVisibility = () => {
+      if (document.visibilityState === "hidden") {
+        trackEvent("session_end");
+      }
+    };
+    window.addEventListener("visibilitychange", handleVisibility);
+    return () => window.removeEventListener("visibilitychange", handleVisibility);
+  }, [currentPrompt]);
 
   useEffect(() => {
     if (!feedbackOpen && inputRef.current) {
@@ -404,6 +431,17 @@ export default function App() {
   }, [analyticsEnabled]);
 
   useEffect(() => {
+    identifyUserProperties({
+      daily_goal: dailyGoal,
+      theme: isCatalanTheme ? "catalan" : "default",
+      regular_only: verbFilters.regular && !verbFilters.irregular,
+      irregular_on: verbFilters.irregular,
+      tenses_enabled: Object.keys(enabledTenses).filter((key) => enabledTenses[key]),
+      persons_enabled: Object.keys(enabledPersons).filter((key) => enabledPersons[key]),
+    });
+  }, [dailyGoal, isCatalanTheme, verbFilters, enabledTenses, enabledPersons, analyticsEnabled]);
+
+  useEffect(() => {
     if (!expectedAnswer) return undefined;
     const inputLower = inputValue.toLowerCase();
     const expectedLower = expectedAnswer.toLowerCase();
@@ -439,11 +477,15 @@ export default function App() {
         setHintedIndices(new Set());
         setCurrentPrompt(next);
         setConfettiBurst((prev) => prev + 1);
+        const timeToAnswerMs = promptStartRef.current
+          ? Date.now() - promptStartRef.current
+          : null;
         trackEvent("prompt_completed", {
           verb: currentPrompt?.verb?.infinitive,
           person: currentPrompt?.person,
           tense: currentPrompt?.tense,
           hints_used: hintsUsed,
+          time_to_answer_ms: timeToAnswerMs,
         });
         setHintsUsed(0);
       }, 300);
@@ -569,6 +611,14 @@ export default function App() {
   }, [confettiBurst, confettiBig]);
 
   const togglePerson = (person) => {
+    if (currentPrompt && currentPrompt.person === person) {
+      trackEvent("prompt_abandoned", {
+        reason: "person_disabled",
+        verb: currentPrompt.verb.infinitive,
+        person: currentPrompt.person,
+        tense: currentPrompt.tense,
+      });
+    }
     setEnabledPersons((prev) => {
       const enabledCount = Object.values(prev).filter(Boolean).length;
       if (prev[person] && enabledCount === 1) return prev;
@@ -578,6 +628,14 @@ export default function App() {
   };
 
   const toggleTense = (tense) => {
+    if (currentPrompt && currentPrompt.tense === tense) {
+      trackEvent("prompt_abandoned", {
+        reason: "tense_disabled",
+        verb: currentPrompt.verb.infinitive,
+        person: currentPrompt.person,
+        tense: currentPrompt.tense,
+      });
+    }
     setEnabledTenses((prev) => {
       const enabledCount = Object.values(prev).filter(Boolean).length;
       if (prev[tense] && enabledCount === 1) return prev;
@@ -587,6 +645,19 @@ export default function App() {
   };
 
   const toggleVerbFilter = (key) => {
+    if (currentPrompt) {
+      const isRegular = currentPrompt.verb.regular !== false;
+      const wouldDisableCurrent =
+        (key === "regular" && isRegular) || (key === "irregular" && !isRegular);
+      if (wouldDisableCurrent) {
+        trackEvent("prompt_abandoned", {
+          reason: "verb_filter_disabled",
+          verb: currentPrompt.verb.infinitive,
+          person: currentPrompt.person,
+          tense: currentPrompt.tense,
+        });
+      }
+    }
     setVerbFilters((prev) => {
       const enabledCount = Object.values(prev).filter(Boolean).length;
       if (prev[key] && enabledCount === 1) return prev;

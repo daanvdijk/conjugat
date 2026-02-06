@@ -2,6 +2,7 @@ import * as amplitude from "@amplitude/unified";
 
 let isInitialized = false;
 let analyticsEnabled = false;
+let baseContext = {};
 
 function getUserId() {
   const existing = localStorage.getItem("conjugat_analytics_uid");
@@ -32,6 +33,11 @@ export function initAnalytics({ enabled: shouldEnable }) {
     },
   });
 
+  baseContext = {
+    app_version: import.meta.env.VITE_APP_VERSION ?? "0.0.1",
+    is_mobile: window.matchMedia("(max-width: 700px)").matches,
+  };
+
   if (!analyticsEnabled) {
     amplitude.browser?.optOut?.();
   }
@@ -51,5 +57,10 @@ export function setAnalyticsEnabled(value) {
 
 export function trackEvent(event, props = {}) {
   if (!isInitialized || !analyticsEnabled) return;
-  amplitude.browser?.track?.(event, props);
+  amplitude.browser?.track?.(event, { ...baseContext, ...props });
+}
+
+export function identifyUserProperties(properties) {
+  if (!isInitialized || !analyticsEnabled) return;
+  amplitude.browser?.setUserProperties?.(properties);
 }
