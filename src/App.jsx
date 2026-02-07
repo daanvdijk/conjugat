@@ -8,8 +8,17 @@ import {
 } from "./analytics.js";
 
 const PERSONS = ["jo", "tu", "ell", "nosaltres", "vosaltres", "ells"];
-const TENSES = ["present", "imperfect", "future", "conditional"];
+const TENSES = [
+  "present",
+  "imperfect",
+  "future",
+  "conditional",
+  "subjunctive_present",
+  "subjunctive_imperfect",
+  "imperative",
+];
 const GOALS = [25, 50, 100];
+const VERB_LIMITS = [100, 300, 500];
 const DEFAULT_ANALYTICS_ENABLED = Boolean(import.meta.env.VITE_AMPLITUDE_KEY);
 const FEEDBACK_EMAIL = import.meta.env.VITE_FEEDBACK_EMAIL;
 
@@ -36,6 +45,9 @@ const TENSE_LABELS = {
   imperfect: "imperfet",
   future: "futur",
   conditional: "condicional",
+  subjunctive_present: "subjuntiu present",
+  subjunctive_imperfect: "subjuntiu imperfet",
+  imperative: "imperatiu",
 };
 
 function stripAccents(value) {
@@ -66,170 +78,84 @@ function findFirstRedIndex(typed, expected, hintedSet) {
   return -1;
 }
 
-function getVerbGroup(infinitive) {
-  if (infinitive.endsWith("ar")) return "ar";
-  if (infinitive.endsWith("ir")) return "ir";
-  if (infinitive.endsWith("er") || infinitive.endsWith("re")) return "er";
-  return "ar";
-}
-
-function regularPresent(infinitive, group, person) {
-  const stem = infinitive.slice(0, -2);
-  if (group === "ar") {
-    return (
-      {
-        jo: `${stem}o`,
-        tu: `${stem}es`,
-        ell: `${stem}a`,
-        nosaltres: `${stem}em`,
-        vosaltres: `${stem}eu`,
-        ells: `${stem}en`,
-      }[person] ?? ""
-    );
-  }
-  if (group === "ir") {
-    return (
-      {
-        jo: `${stem}o`,
-        tu: `${stem}s`,
-        ell: `${stem}`,
-        nosaltres: `${stem}im`,
-        vosaltres: `${stem}iu`,
-        ells: `${stem}en`,
-      }[person] ?? ""
-    );
-  }
-  return (
-    {
-      jo: `${stem}o`,
-      tu: `${stem}s`,
-      ell: `${stem}`,
-      nosaltres: `${stem}em`,
-      vosaltres: `${stem}eu`,
-      ells: `${stem}en`,
-    }[person] ?? ""
-  );
-}
-
-function regularImperfect(infinitive, group, person) {
-  const stem = infinitive.slice(0, -2);
-  if (group === "ar") {
-    return (
-      {
-        jo: `${stem}ava`,
-        tu: `${stem}aves`,
-        ell: `${stem}ava`,
-        nosaltres: `${stem}àvem`,
-        vosaltres: `${stem}àveu`,
-        ells: `${stem}aven`,
-      }[person] ?? ""
-    );
-  }
-  return (
-    {
-      jo: `${stem}ia`,
-      tu: `${stem}ies`,
-      ell: `${stem}ia`,
-      nosaltres: `${stem}íem`,
-      vosaltres: `${stem}íeu`,
-      ells: `${stem}ien`,
-    }[person] ?? ""
-  );
-}
-
-function regularFuture(infinitive, person) {
-  return (
-    {
-      jo: `${infinitive}é`,
-      tu: `${infinitive}às`,
-      ell: `${infinitive}à`,
-      nosaltres: `${infinitive}em`,
-      vosaltres: `${infinitive}eu`,
-      ells: `${infinitive}an`,
-    }[person] ?? ""
-  );
-}
-
-function regularConditional(infinitive, person) {
-  return (
-    {
-      jo: `${infinitive}ia`,
-      tu: `${infinitive}ies`,
-      ell: `${infinitive}ia`,
-      nosaltres: `${infinitive}íem`,
-      vosaltres: `${infinitive}íeu`,
-      ells: `${infinitive}ien`,
-    }[person] ?? ""
-  );
-}
-
 function getConjugation(verb, tense, person) {
-  if (verb.tenses && verb.tenses[tense]?.[person]) {
-    return verb.tenses[tense][person];
-  }
-  const group = verb.group ?? getVerbGroup(verb.infinitive);
-  if (tense === "present") {
-    return (
-      verb.present?.[person] ?? regularPresent(verb.infinitive, group, person)
-    );
-  }
-  if (tense === "imperfect") {
-    return regularImperfect(verb.infinitive, group, person);
-  }
-  if (tense === "future") {
-    return regularFuture(verb.infinitive, person);
-  }
-  if (tense === "conditional") {
-    return regularConditional(verb.infinitive, person);
-  }
-  return "";
+  return verb.tenses?.[tense]?.[person] ?? "";
 }
 
-function pickNextPrompt(enabledPersons, enabledTenses, verbFilters, lastKey) {
-  const enabled = PERSONS.filter((person) => enabledPersons[person]);
-  const enabledTenseList = TENSES.filter((tense) => enabledTenses[tense]);
-  if (enabled.length === 0) return null;
-  if (enabledTenseList.length === 0) return null;
+function getVerbRank(verb, index) {
+  return typeof verb.rank === "number" ? verb.rank : index + 1;
+}
 
-  const filteredVerbs = verbs.filter((verb) => {
+function getFilteredVerbs(verbFilters, verbLimit) {
+  return verbs.filter((verb, index) => {
     const regular = verb.regular !== false;
     if (regular && !verbFilters.regular) return false;
     if (!regular && !verbFilters.irregular) return false;
+    const rank = getVerbRank(verb, index);
+    if (rank > verbLimit) return false;
     return true;
   });
+}
 
+function getAvailablePrompts(
+  filteredVerbs,
+  enabledPersons,
+  enabledTenses,
+  lastKey,
+) {
+  const enabledPersonList = PERSONS.filter((person) => enabledPersons[person]);
+  const enabledTenseList = TENSES.filter((tense) => enabledTenses[tense]);
+  if (enabledPersonList.length === 0 || enabledTenseList.length === 0) return [];
+
+  const prompts = [];
+  for (const verb of filteredVerbs) {
+    for (const tense of enabledTenseList) {
+      for (const person of enabledPersonList) {
+        const answer = getConjugation(verb, tense, person);
+        if (!answer) continue;
+        const key = `${verb.infinitive}-${person}-${tense}`;
+        if (lastKey && key === lastKey) continue;
+        prompts.push({ verb, person, tense, key });
+      }
+    }
+  }
+  return prompts;
+}
+
+function pickNextPrompt(
+  enabledPersons,
+  enabledTenses,
+  verbFilters,
+  verbLimit,
+  lastKey,
+) {
+  const filteredVerbs = getFilteredVerbs(verbFilters, verbLimit);
   if (filteredVerbs.length === 0) return null;
-
-  let next = null;
-  let tries = 0;
-  while (!next || (lastKey && next.key === lastKey && tries < 10)) {
-    const verb =
-      filteredVerbs[Math.floor(Math.random() * filteredVerbs.length)];
-    const person = enabled[Math.floor(Math.random() * enabled.length)];
-    const tense =
-      enabledTenseList[Math.floor(Math.random() * enabledTenseList.length)];
-    next = {
-      verb,
-      person,
-      tense,
-      key: `${verb.infinitive}-${person}-${tense}`,
-    };
-    tries += 1;
-  }
-  return next;
+  const prompts = getAvailablePrompts(
+    filteredVerbs,
+    enabledPersons,
+    enabledTenses,
+    lastKey,
+  );
+  if (prompts.length === 0) return null;
+  return prompts[Math.floor(Math.random() * prompts.length)];
 }
 
-function hasAvailablePrompts(enabledPersons, enabledTenses, verbFilters) {
-  const enabled = PERSONS.filter((person) => enabledPersons[person]);
-  const enabledTenseList = TENSES.filter((tense) => enabledTenses[tense]);
-  if (enabled.length === 0 || enabledTenseList.length === 0) return false;
-  const filteredVerbs = verbs.filter((verb) => {
-    const regular = verb.regular !== false;
-    if (regular && !verbFilters.regular) return false;
-    if (!regular && !verbFilters.irregular) return false;
-    return true;
-  });
-  return filteredVerbs.length > 0;
+function hasAvailablePrompts(
+  enabledPersons,
+  enabledTenses,
+  verbFilters,
+  verbLimit,
+) {
+  const filteredVerbs = getFilteredVerbs(verbFilters, verbLimit);
+  if (filteredVerbs.length === 0) return false;
+  const prompts = getAvailablePrompts(
+    filteredVerbs,
+    enabledPersons,
+    enabledTenses,
+    null,
+  );
+  return prompts.length > 0;
 }
 
 function getLocalDateKey(date = new Date()) {
@@ -239,13 +165,26 @@ function getLocalDateKey(date = new Date()) {
   return `${year}-${month}-${day}`;
 }
 
-function isPromptAllowed(prompt, enabledPersons, enabledTenses, verbFilters) {
+function isPromptAllowed(
+  prompt,
+  enabledPersons,
+  enabledTenses,
+  verbFilters,
+  verbLimit,
+) {
   if (!prompt) return false;
   if (!enabledPersons[prompt.person]) return false;
   if (!enabledTenses[prompt.tense]) return false;
   const isRegular = prompt.verb.regular !== false;
   if (isRegular && !verbFilters.regular) return false;
   if (!isRegular && !verbFilters.irregular) return false;
+  const verbIndex = verbs.findIndex(
+    (verb) => verb.infinitive === prompt.verb.infinitive,
+  );
+  const rank = getVerbRank(prompt.verb, verbIndex === -1 ? 0 : verbIndex);
+  if (rank > verbLimit) return false;
+  const answer = getConjugation(prompt.verb, prompt.tense, prompt.person);
+  if (!answer) return false;
   return true;
 }
 
@@ -266,6 +205,9 @@ export default function App() {
     imperfect: false,
     future: false,
     conditional: false,
+    subjunctive_present: false,
+    subjunctive_imperfect: false,
+    imperative: false,
   });
   const [verbFilters, setVerbFilters] = useState({
     regular: true,
@@ -276,6 +218,7 @@ export default function App() {
   const [hintedIndices, setHintedIndices] = useState(() => new Set());
   const [isCatalanTheme, setIsCatalanTheme] = useState(true);
   const [dailyGoal, setDailyGoal] = useState(50);
+  const [verbLimit, setVerbLimit] = useState(300);
   const [dailyProgress, setDailyProgress] = useState(0);
   const [dailyDateKey, setDailyDateKey] = useState(getLocalDateKey());
   const [confettiBurst, setConfettiBurst] = useState(0);
@@ -307,6 +250,7 @@ export default function App() {
         enabledPersons,
         enabledTenses,
         verbFilters,
+        verbLimit,
         null,
       );
       if (next) {
@@ -316,7 +260,7 @@ export default function App() {
         setConfigError(true);
       }
     }
-  }, [currentPrompt, enabledPersons, enabledTenses, verbFilters]);
+  }, [currentPrompt, enabledPersons, enabledTenses, verbFilters, verbLimit]);
 
   useEffect(() => {
     if (
@@ -326,6 +270,7 @@ export default function App() {
         enabledPersons,
         enabledTenses,
         verbFilters,
+        verbLimit,
       )
     ) {
       setInputValue("");
@@ -334,6 +279,7 @@ export default function App() {
         enabledPersons,
         enabledTenses,
         verbFilters,
+        verbLimit,
         currentPrompt.key,
       );
       if (next) {
@@ -343,7 +289,7 @@ export default function App() {
         setConfigError(true);
       }
     }
-  }, [currentPrompt, enabledPersons, enabledTenses, verbFilters]);
+  }, [currentPrompt, enabledPersons, enabledTenses, verbFilters, verbLimit]);
 
   useEffect(() => {
     if (!currentPrompt) return;
@@ -431,9 +377,16 @@ export default function App() {
     if (storedSettings) {
       try {
         const parsed = JSON.parse(storedSettings);
-        if (parsed.enabledPersons) setEnabledPersons(parsed.enabledPersons);
-        if (parsed.enabledTenses) setEnabledTenses(parsed.enabledTenses);
+        if (parsed.enabledPersons) {
+          setEnabledPersons((prev) => ({ ...prev, ...parsed.enabledPersons }));
+        }
+        if (parsed.enabledTenses) {
+          setEnabledTenses((prev) => ({ ...prev, ...parsed.enabledTenses }));
+        }
         if (parsed.verbFilters) setVerbFilters(parsed.verbFilters);
+        if (parsed.verbLimit && VERB_LIMITS.includes(parsed.verbLimit)) {
+          setVerbLimit(parsed.verbLimit);
+        }
         if (parsed.analyticsEnabled !== undefined) {
           setAnalyticsEnabledState(Boolean(parsed.analyticsEnabled));
         } else {
@@ -462,10 +415,11 @@ export default function App() {
         enabledPersons,
         enabledTenses,
         verbFilters,
+        verbLimit,
         analyticsEnabled,
       }),
     );
-  }, [enabledPersons, enabledTenses, verbFilters, analyticsEnabled]);
+  }, [enabledPersons, enabledTenses, verbFilters, verbLimit, analyticsEnabled]);
 
   useEffect(() => {
     initAnalytics({ enabled: analyticsEnabled });
@@ -484,6 +438,7 @@ export default function App() {
       persons_enabled: Object.keys(enabledPersons).filter(
         (key) => enabledPersons[key],
       ),
+      verb_limit: verbLimit,
     });
   }, [
     dailyGoal,
@@ -491,6 +446,7 @@ export default function App() {
     verbFilters,
     enabledTenses,
     enabledPersons,
+    verbLimit,
     analyticsEnabled,
   ]);
 
@@ -524,6 +480,7 @@ export default function App() {
           enabledPersons,
           enabledTenses,
           verbFilters,
+          verbLimit,
           currentPrompt?.key,
         );
         setLastResult({
@@ -642,6 +599,11 @@ export default function App() {
     trackEvent("settings_changed", { setting: "daily_goal", value: goal });
   };
 
+  const handleVerbLimitChange = (limit) => {
+    setVerbLimit(limit);
+    trackEvent("settings_changed", { setting: "verb_limit", value: limit });
+  };
+
   const confettiPieces = useMemo(() => {
     if (confettiBurst === 0) return [];
     const colors = ["#1f8b4c", "#c88b00", "#c9252d", "#0f766e", "#f2c53a"];
@@ -683,7 +645,7 @@ export default function App() {
       const enabledCount = Object.values(prev).filter(Boolean).length;
       if (prev[person] && enabledCount === 1) return prev;
       const next = { ...prev, [person]: !prev[person] };
-      if (!hasAvailablePrompts(next, enabledTenses, verbFilters)) {
+      if (!hasAvailablePrompts(next, enabledTenses, verbFilters, verbLimit)) {
         setConfigError(true);
         return prev;
       }
@@ -706,7 +668,7 @@ export default function App() {
       const enabledCount = Object.values(prev).filter(Boolean).length;
       if (prev[tense] && enabledCount === 1) return prev;
       const next = { ...prev, [tense]: !prev[tense] };
-      if (!hasAvailablePrompts(enabledPersons, next, verbFilters)) {
+      if (!hasAvailablePrompts(enabledPersons, next, verbFilters, verbLimit)) {
         setConfigError(true);
         return prev;
       }
@@ -734,7 +696,7 @@ export default function App() {
       const enabledCount = Object.values(prev).filter(Boolean).length;
       if (prev[key] && enabledCount === 1) return prev;
       const next = { ...prev, [key]: !prev[key] };
-      if (!hasAvailablePrompts(enabledPersons, enabledTenses, next)) {
+      if (!hasAvailablePrompts(enabledPersons, enabledTenses, next, verbLimit)) {
         setConfigError(true);
         return prev;
       }
@@ -933,6 +895,22 @@ export default function App() {
                   />
                   {item.label}
                 </label>
+              ))}
+            </div>
+          </div>
+
+          <div className="settings">
+            <div className="settings-title">Nombre de verbs</div>
+            <div className="goal-row">
+              {VERB_LIMITS.map((limit) => (
+                <button
+                  key={limit}
+                  type="button"
+                  className={`goal-pill ${verbLimit === limit ? "on" : "off"}`}
+                  onClick={() => handleVerbLimitChange(limit)}
+                >
+                  {limit}
+                </button>
               ))}
             </div>
           </div>

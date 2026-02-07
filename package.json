@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "build:verbs": "node scripts/build-verbs.mjs",
-    "build:verbs:validate": "node scripts/build-verbs.mjs --validate"
+    "validate:verbs": "node scripts/validate-verbs.mjs"
   },
   "dependencies": {
     "@amplitude/analytics-browser": "^1.12.0",

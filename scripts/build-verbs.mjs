@@ -13,8 +13,9 @@ const FREQUENCY_URL =
   "https://raw.githubusercontent.com/nachocab/words-by-frequency/master/catalan.txt";
 const FREEDICT_SRC_URL =
   "https://download.freedict.org/dictionaries/cat-eng/2024.10.10/freedict-cat-eng-2024.10.10.src.tar.xz";
+const MAX_VERBS = 500;
 
-const IRREGULAR_VERBS = [
+const IRREGULAR_VERBS = new Set([
   "ser",
   "estar",
   "anar",
@@ -38,7 +39,11 @@ const IRREGULAR_VERBS = [
   "caure",
   "valer",
   "sortir",
-];
+  "seure",
+  "asseure",
+  "fondre",
+  "sorprendre",
+]);
 
 const MANUAL_TRANSLATIONS = {
   ser: "to be",
@@ -49,20 +54,11 @@ const MANUAL_TRANSLATIONS = {
   venir: "to come",
   dir: "to say",
   veure: "to see",
-  conèixer: "to know",
-  creure: "to believe",
   poder: "to be able",
   voler: "to want",
   saber: "to know",
   haver: "to have",
-  dur: "to last",
   posar: "to put",
-  prendre: "to take",
-  treure: "to take out",
-  moure: "to move",
-  riure: "to laugh",
-  caure: "to fall",
-  valer: "to be worth",
   sortir: "to go out",
 };
 
@@ -93,6 +89,124 @@ async function fetchText(url) {
     throw new Error(`Failed to fetch ${url}: ${response.status}`);
   }
   return response.text();
+}
+
+function parseConjugationsFromHtml(html, infinitive) {
+  const cleanedHtml = html
+    .replace(/<script[\s\S]*?<\/script>/g, "")
+    .replace(/<style[\s\S]*?<\/style>/g, "");
+
+  const extractTableById = (sectionHtml, headingId) => {
+    const re = new RegExp(
+      `<h3[^>]*id=["']${headingId}["'][^>]*>[\\s\\S]*?<\\/h3>\\s*<table[^>]*>([\\s\\S]*?)<\\/table>`,
+      "i"
+    );
+    const match = sectionHtml.match(re);
+    return match ? match[1] : "";
+  };
+
+  const parseTable = (tableHtml) => {
+    const forms = {};
+    const rowRe = /<tr[^>]*>[\s\S]*?<th[^>]*>([\s\S]*?)<\/th>[\s\S]*?<td[^>]*>([\s\S]*?)<\/td>[\s\S]*?<\/tr>/gi;
+    let match;
+    while ((match = rowRe.exec(tableHtml)) !== null) {
+      const pronoun = normalizeText(stripTags(match[1])).replace(/[()]/g, "");
+      const valueRaw = normalizeText(stripTags(match[2]));
+      if (!pronoun || !valueRaw) continue;
+      let key = null;
+      if (pronoun.startsWith("jo")) key = "jo";
+      else if (pronoun.startsWith("tu")) key = "tu";
+      else if (pronoun.startsWith("ell, ella")) key = "ell";
+      else if (pronoun.startsWith("vostè")) key = "ell";
+      else if (pronoun.startsWith("nosaltres")) key = "nosaltres";
+      else if (pronoun.startsWith("vosaltres")) key = "vosaltres";
+      else if (pronoun.startsWith("ells, elles")) key = "ells";
+      else if (pronoun.startsWith("vostès")) key = "ells";
+      if (!key) continue;
+      const cleaned = valueRaw.split(",")[0].replace(/\(.*?\)/g, "").trim();
+      forms[key] = cleaned;
+    }
+    return forms;
+  };
+
+  const extractFirstTableAfter = (sectionHtml, headingId) => {
+    const startRe = new RegExp(`<h2[^>]*id=["']${headingId}["'][^>]*>`, "i");
+    const startMatch = sectionHtml.match(startRe);
+    if (!startMatch) return "";
+    const startIndex = sectionHtml.indexOf(startMatch[0]);
+    const afterStart = sectionHtml.slice(startIndex);
+    const match = afterStart.match(/<table[^>]*>([\s\S]*?)<\/table>/i);
+    return match ? match[1] : "";
+  };
+
+  const tenses = {
+    present: parseTable(extractTableById(cleanedHtml, "indicatiu-present")),
+    imperfect: parseTable(extractTableById(cleanedHtml, "indicatiu-imperfet")),
+    future: parseTable(extractTableById(cleanedHtml, "indicatiu-futur")),
+    conditional: parseTable(extractTableById(cleanedHtml, "condicional")),
+    subjunctive_present: parseTable(
+      extractTableById(cleanedHtml, "subjuntiu-present")
+    ),
+    subjunctive_imperfect: parseTable(
+      extractTableById(cleanedHtml, "subjuntiu-imperfet")
+    ),
+    imperative: parseTable(extractFirstTableAfter(cleanedHtml, "mode-imperatiu")),
+  };
+
+  const requiredByTense = {
+    present: PERSON_LABELS,
+    imperfect: PERSON_LABELS,
+    future: PERSON_LABELS,
+    conditional: PERSON_LABELS,
+    subjunctive_present: PERSON_LABELS,
+    subjunctive_imperfect: PERSON_LABELS,
+  };
+
+  for (const [tense, requiredPersons] of Object.entries(requiredByTense)) {
+    for (const person of requiredPersons) {
+      if (!tenses[tense][person]) {
+        throw new Error(`Missing ${person} for ${infinitive} (${tense})`);
+      }
+    }
+  }
+
+  return tenses;
+}
+
+async function fetchConjugationUrl(infinitive) {
+  const url = `https://www.verbs.cat/en/conjugation.json?view=suggest&userinput=${encodeURIComponent(
+    infinitive
+  )}`;
+  const cachePath = path.join(CACHE_DIR, `verbs-cat-suggest-${infinitive}.json`);
+  let raw;
+  if (fs.existsSync(cachePath)) {
+    raw = fs.readFileSync(cachePath, "utf-8");
+  } else {
+    raw = await fetchText(url);
+    fs.writeFileSync(cachePath, raw, "utf-8");
+  }
+  let data;
+  try {
+    data = JSON.parse(raw);
+  } catch {
+    throw new Error(`Failed to parse suggestion response for ${infinitive}`);
+  }
+  if (!Array.isArray(data) || data.length === 0) {
+    throw new Error(`No suggestions for ${infinitive}`);
+  }
+  const normalized = infinitive.toLowerCase();
+  const exact = data.find((item) => item?.suggestion?.toLowerCase() === normalized);
+  const chosen = exact || data[0];
+  if (!chosen?.url) {
+    throw new Error(`Missing conjugation URL for ${infinitive}`);
+  }
+  const resolved = new URL(chosen.url, "https://www.verbs.cat");
+  return resolved.toString();
+}
+
+async function fetchConjugationHtml(infinitive) {
+  const url = await fetchConjugationUrl(infinitive);
+  return fetchText(url);
 }
 
 async function fetchBuffer(url) {
@@ -207,226 +321,25 @@ function normalizeTranslation(value) {
   return `to ${cleaned}`;
 }
 
-function regularPresent(infinitive, group, person) {
-  const stem = infinitive.slice(0, -2);
-  if (group === "ar") {
-    return (
-      {
-        jo: `${stem}o`,
-        tu: `${stem}es`,
-        ell: `${stem}a`,
-        nosaltres: `${stem}em`,
-        vosaltres: `${stem}eu`,
-        ells: `${stem}en`,
-      }[person] ?? ""
-    );
-  }
-  if (group === "ir") {
-    return (
-      {
-        jo: `${stem}o`,
-        tu: `${stem}s`,
-        ell: `${stem}`,
-        nosaltres: `${stem}im`,
-        vosaltres: `${stem}iu`,
-        ells: `${stem}en`,
-      }[person] ?? ""
-    );
-  }
-  return (
-    {
-      jo: `${stem}o`,
-      tu: `${stem}s`,
-      ell: `${stem}`,
-      nosaltres: `${stem}em`,
-      vosaltres: `${stem}eu`,
-      ells: `${stem}en`,
-    }[person] ?? ""
-  );
-}
 
-function regularImperfect(infinitive, group, person) {
-  const stem = infinitive.slice(0, -2);
-  if (group === "ar") {
-    return (
-      {
-        jo: `${stem}ava`,
-        tu: `${stem}aves`,
-        ell: `${stem}ava`,
-        nosaltres: `${stem}àvem`,
-        vosaltres: `${stem}àveu`,
-        ells: `${stem}aven`,
-      }[person] ?? ""
-    );
-  }
-  return (
-    {
-      jo: `${stem}ia`,
-      tu: `${stem}ies`,
-      ell: `${stem}ia`,
-      nosaltres: `${stem}íem`,
-      vosaltres: `${stem}íeu`,
-      ells: `${stem}ien`,
-    }[person] ?? ""
-  );
-}
-
-function regularFuture(infinitive, person) {
-  return (
-    {
-      jo: `${infinitive}é`,
-      tu: `${infinitive}às`,
-      ell: `${infinitive}à`,
-      nosaltres: `${infinitive}em`,
-      vosaltres: `${infinitive}eu`,
-      ells: `${infinitive}an`,
-    }[person] ?? ""
-  );
-}
-
-function regularConditional(infinitive, person) {
-  return (
-    {
-      jo: `${infinitive}ia`,
-      tu: `${infinitive}ies`,
-      ell: `${infinitive}ia`,
-      nosaltres: `${infinitive}íem`,
-      vosaltres: `${infinitive}íeu`,
-      ells: `${infinitive}ien`,
-    }[person] ?? ""
-  );
-}
-
-function buildRegularTenses(infinitive, group) {
-  return {
-    present: Object.fromEntries(
-      PERSON_LABELS.map((person) => [person, regularPresent(infinitive, group, person)])
-    ),
-    imperfect: Object.fromEntries(
-      PERSON_LABELS.map((person) => [person, regularImperfect(infinitive, group, person)])
-    ),
-    future: Object.fromEntries(
-      PERSON_LABELS.map((person) => [person, regularFuture(infinitive, person)])
-    ),
-    conditional: Object.fromEntries(
-      PERSON_LABELS.map((person) => [person, regularConditional(infinitive, person)])
-    ),
-  };
-}
-
-function sliceTenseLines(lines, tenseLabel, allLabels) {
-  const target = tenseLabel.toLowerCase();
-  const startIndex = lines.findIndex((line) => line.toLowerCase().includes(target));
-  if (startIndex === -1) return [];
-  const result = [];
-  for (let i = startIndex + 1; i < lines.length; i += 1) {
-    const line = lines[i];
-    if (allLabels.some((label) => line.toLowerCase().includes(label.toLowerCase()))) break;
-    result.push(line);
-  }
-  return result;
-}
-
-function extractVerbForms(blockLines) {
-  const forms = {};
-  for (const rawLine of blockLines) {
-    const line = normalizeText(rawLine.replace(/\|/g, " "));
-    if (!line) continue;
-    if (line.startsWith("jo ")) {
-      forms.jo = line.replace(/^jo\s+/, "");
-      continue;
-    }
-    if (line.startsWith("tu ")) {
-      forms.tu = line.replace(/^tu\s+/, "");
-      continue;
-    }
-    if (line.startsWith("ell, ella, vostè")) {
-      forms.ell = line.replace(/^ell, ella, vostè\s+/, "");
-      continue;
-    }
-    if (line.startsWith("nosaltres ")) {
-      forms.nosaltres = line.replace(/^nosaltres\s+/, "");
-      continue;
-    }
-    if (line.startsWith("vosaltres, vós ")) {
-      forms.vosaltres = line.replace(/^vosaltres, vós\s+/, "");
-      continue;
-    }
-    if (line.startsWith("ells, elles, vostès ")) {
-      forms.ells = line.replace(/^ells, elles, vostès\s+/, "");
-    }
-  }
-
-  for (const key of Object.keys(forms)) {
-    const cleaned = forms[key]
-      .split(",")[0]
-      .replace(/\(.*?\)/g, "")
-      .trim();
-    forms[key] = cleaned;
-  }
-
-  return forms;
-}
 
 async function fetchIrregularConjugations(infinitive) {
-  const url = `https://www.verbs.cat/en/conjugation/${encodeURIComponent(infinitive)}.html`;
   const cachePath = path.join(CACHE_DIR, `verbs-cat-${infinitive}.html`);
-  const html = await fetchTextCached(url, cachePath);
-  const text = html
-    .replace(/<script[\s\S]*?<\/script>/g, "")
-    .replace(/<style[\s\S]*?<\/style>/g, "")
-    .replace(/<[^>]+>/g, "\n");
-  const lines = text
-    .split(/\r?\n/)
-    .map((line) => normalizeText(line))
-    .filter(Boolean);
-
-  const labels = ["Present", "Imperfect", "Future", "Conditional"];
-  const presentLines = sliceTenseLines(lines, "Present", labels);
-  const imperfectLines = sliceTenseLines(lines, "Imperfect", labels);
-  const futureLines = sliceTenseLines(lines, "Future", labels);
-  const conditionalLines = sliceTenseLines(lines, "Conditional", labels);
-
-  const present = extractVerbForms(presentLines);
-  const imperfect = extractVerbForms(imperfectLines);
-  const future = extractVerbForms(futureLines);
-  const conditional = extractVerbForms(conditionalLines);
-
-  for (const person of PERSON_LABELS) {
-    if (!present[person] || !imperfect[person] || !future[person] || !conditional[person]) {
-      throw new Error(`Missing ${person} for ${infinitive}`);
+  let html;
+  if (fs.existsSync(cachePath)) {
+    html = fs.readFileSync(cachePath, "utf-8");
+    if (!html.includes("Indicative mood")) {
+      html = await fetchConjugationHtml(infinitive);
+      fs.writeFileSync(cachePath, html, "utf-8");
     }
+  } else {
+    html = await fetchConjugationHtml(infinitive);
+    fs.writeFileSync(cachePath, html, "utf-8");
   }
-
-  return { present, imperfect, future, conditional };
-}
-
-async function validateAgainstSource(verb, expectedTenses) {
-  const source = await fetchIrregularConjugations(verb.infinitive);
-  const mismatches = [];
-  for (const tense of TENSE_LABELS) {
-    for (const person of PERSON_LABELS) {
-      const expected = expectedTenses[tense]?.[person];
-      const actual = source[tense]?.[person];
-      if (!expected || !actual || expected !== actual) {
-        mismatches.push({
-          tense,
-          person,
-          expected,
-          actual,
-        });
-      }
-    }
-  }
-  return mismatches;
+  return parseConjugationsFromHtml(html, infinitive);
 }
 
 async function main() {
-  const args = process.argv.slice(2);
-  const validate = args.includes("--validate");
-  const validateArg = args.find((arg) => arg.startsWith("--validate-count="));
-  const validateCount = validateArg ? Number(validateArg.split("=")[1]) || 30 : 30;
-
   console.log("Downloading frequency list...");
   const frequencyText = await fetchTextCached(
     FREQUENCY_URL,
@@ -441,39 +354,14 @@ async function main() {
   console.log("Parsing frequency list...");
   const freqWords = parseFrequencyList(frequencyText);
 
-  console.log("Fetching irregular conjugations...");
-  const irregularData = [];
-  const irregularSet = new Set(IRREGULAR_VERBS);
-  const missingIrregulars = [];
-  for (const verb of IRREGULAR_VERBS) {
-    try {
-      const tenses = await fetchIrregularConjugations(verb);
-      const translation = normalizeTranslation(
-        translationMap.get(verb) || MANUAL_TRANSLATIONS[verb] || ""
-      );
-      irregularData.push({
-        infinitive: verb,
-        translation: translation || "",
-        regular: false,
-        group: getGroup(verb),
-        tenses,
-      });
-      console.log(`Fetched ${verb}`);
-    } catch (error) {
-      missingIrregulars.push(`${verb}: ${error.message}`);
-      console.warn(`Skipping irregular ${verb}: ${error.message}`);
-    }
-  }
-
-  const regularData = [];
+  const selected = [];
   const missingTranslations = [];
-
   const orthographyCandidates = [];
+  let rank = 0;
 
   for (const word of freqWords) {
-    if (regularData.length + irregularData.length >= 200) break;
+    if (selected.length >= MAX_VERBS) break;
     if (!isVerbCandidate(word)) continue;
-    if (irregularSet.has(word)) continue;
     const translationRaw = translationMap.get(word);
     if (!translationRaw) {
       missingTranslations.push(word);
@@ -481,84 +369,71 @@ async function main() {
     }
     const translation = normalizeTranslation(translationRaw);
     if (/(car|gar|çar)$/i.test(word)) {
-      orthographyCandidates.push({ infinitive: word, translation });
+      rank += 1;
+      orthographyCandidates.push({ infinitive: word, translation, rank });
       continue;
     }
-    regularData.push({
-      infinitive: word,
-      translation,
-      regular: true,
-      group: getGroup(word),
-    });
+    rank += 1;
+    selected.push({ infinitive: word, translation, rank });
   }
 
   if (orthographyCandidates.length > 0) {
-    console.log(`Fetching ${orthographyCandidates.length} orthographic verbs...`);
+    console.log(`Including ${orthographyCandidates.length} orthographic verbs...`);
     for (const candidate of orthographyCandidates) {
-      if (regularData.length + irregularData.length >= 200) break;
-      try {
-        const tenses = await fetchIrregularConjugations(candidate.infinitive);
-        irregularData.push({
-          infinitive: candidate.infinitive,
-          translation: candidate.translation,
-          regular: false,
-          group: getGroup(candidate.infinitive),
-          tenses,
-        });
-      } catch (error) {
-        regularData.push({
-          infinitive: candidate.infinitive,
-          translation: candidate.translation,
-          regular: true,
-          group: getGroup(candidate.infinitive),
-        });
-      }
+      if (selected.length >= MAX_VERBS) break;
+      selected.push(candidate);
     }
   }
 
   if (missingTranslations.length > 0) {
     fs.writeFileSync(
       path.join(CACHE_DIR, "missing-translations.txt"),
-      missingTranslations.join("\\n"),
-      "utf-8"
-    );
-  }
-  if (missingIrregulars.length > 0) {
-    fs.writeFileSync(
-      path.join(CACHE_DIR, "missing-irregulars.txt"),
-      missingIrregulars.join("\\n"),
+      missingTranslations.join("\n"),
       "utf-8"
     );
   }
 
-  const verbs = [...irregularData, ...regularData];
+  console.log("Fetching conjugations for selected verbs...");
+  const verbs = [];
+  const missingConjugations = [];
+
+  for (const verb of selected) {
+    try {
+      const tenses = await fetchIrregularConjugations(verb.infinitive);
+      const isOrthographic = /(car|gar|çar)$/i.test(verb.infinitive);
+      const isIrregular = IRREGULAR_VERBS.has(verb.infinitive) || isOrthographic;
+      verbs.push({
+        infinitive: verb.infinitive,
+        translation:
+          normalizeTranslation(
+            translationMap.get(verb.infinitive) ||
+              verb.translation ||
+              MANUAL_TRANSLATIONS[verb.infinitive] ||
+              ""
+          ) || "",
+        regular: !isIrregular,
+        group: getGroup(verb.infinitive),
+        rank: verb.rank,
+        tenses,
+      });
+      console.log(`Fetched ${verb.infinitive}`);
+    } catch (error) {
+      missingConjugations.push(`${verb.infinitive}: ${error.message}`);
+      console.warn(`Skipping ${verb.infinitive}: ${error.message}`);
+    }
+  }
+
+  if (missingConjugations.length > 0) {
+    fs.writeFileSync(
+      path.join(CACHE_DIR, "missing-conjugations.txt"),
+      missingConjugations.join("\n"),
+      "utf-8"
+    );
+  }
+
   const outputPath = path.join(__dirname, "..", "src", "data", "verbs.json");
   fs.writeFileSync(outputPath, JSON.stringify(verbs, null, 2), "utf-8");
   console.log(`Wrote ${verbs.length} verbs to ${outputPath}`);
-
-  if (validate) {
-    console.log(`Validating ${validateCount} regular verbs against source...`);
-    const report = [];
-    const sample = regularData.slice(0, validateCount);
-    for (const verb of sample) {
-      try {
-        const expected = buildRegularTenses(verb.infinitive, verb.group);
-        const mismatches = await validateAgainstSource(verb, expected);
-        if (mismatches.length > 0) {
-          report.push({ infinitive: verb.infinitive, mismatches });
-        }
-      } catch (error) {
-        report.push({ infinitive: verb.infinitive, error: error.message });
-      }
-    }
-    const reportPath = path.join(CACHE_DIR, "validation-report.json");
-    fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), "utf-8");
-    if (report.length === 0) {
-      console.log("Validation passed.");
-    } else {
-      console.log(`Validation found ${report.length} verbs with mismatches.`);
-    }
-  }
 }
 
 main().catch((error) => {
