@@ -206,7 +206,10 @@ async function fetchConjugationUrl(infinitive) {
 
 async function fetchConjugationHtml(infinitive) {
   const url = await fetchConjugationUrl(infinitive);
-  return fetchText(url);
+  return {
+    url,
+    html: await fetchText(url),
+  };
 }
 
 async function fetchBuffer(url) {
@@ -325,18 +328,29 @@ function normalizeTranslation(value) {
 
 async function fetchIrregularConjugations(infinitive) {
   const cachePath = path.join(CACHE_DIR, `verbs-cat-${infinitive}.html`);
+  let sourceUrl = null;
   let html;
   if (fs.existsSync(cachePath)) {
     html = fs.readFileSync(cachePath, "utf-8");
     if (!html.includes("Indicative mood")) {
-      html = await fetchConjugationHtml(infinitive);
+      const result = await fetchConjugationHtml(infinitive);
+      sourceUrl = result.url;
+      html = result.html;
       fs.writeFileSync(cachePath, html, "utf-8");
     }
   } else {
-    html = await fetchConjugationHtml(infinitive);
+    const result = await fetchConjugationHtml(infinitive);
+    sourceUrl = result.url;
+    html = result.html;
     fs.writeFileSync(cachePath, html, "utf-8");
   }
-  return parseConjugationsFromHtml(html, infinitive);
+  if (!sourceUrl) {
+    sourceUrl = await fetchConjugationUrl(infinitive);
+  }
+  return {
+    sourceUrl,
+    tenses: parseConjugationsFromHtml(html, infinitive),
+  };
 }
 
 async function main() {
@@ -399,7 +413,9 @@ async function main() {
 
   for (const verb of selected) {
     try {
-      const tenses = await fetchIrregularConjugations(verb.infinitive);
+      const { sourceUrl, tenses } = await fetchIrregularConjugations(
+        verb.infinitive
+      );
       const isOrthographic = /(car|gar|çar)$/i.test(verb.infinitive);
       const isIrregular = IRREGULAR_VERBS.has(verb.infinitive) || isOrthographic;
       verbs.push({
@@ -414,6 +430,7 @@ async function main() {
         regular: !isIrregular,
         group: getGroup(verb.infinitive),
         rank: verb.rank,
+        sourceUrl,
         tenses,
       });
       console.log(`Fetched ${verb.infinitive}`);
@@ -431,7 +448,7 @@ async function main() {
     );
   }
 
-  const outputPath = path.join(__dirname, "..", "src", "data", "verbs.json");
+  const outputPath = path.join(__dirname, "..", "shared", "verbs.json");
   fs.writeFileSync(outputPath, JSON.stringify(verbs, null, 2), "utf-8");
   console.log(`Wrote ${verbs.length} verbs to ${outputPath}`);
 }

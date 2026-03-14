@@ -237,7 +237,7 @@ def main():
         sys.exit(1)
 
     output_path = os.path.join(
-        os.path.dirname(os.path.dirname(__file__)), "src", "data", "verbs.json"
+        os.path.dirname(os.path.dirname(__file__)), "shared", "verbs.json"
     )
 
     print("Fetching Lingualid list...")

@@ -82,6 +82,13 @@ function getConjugation(verb, tense, person) {
   return verb.tenses?.[tense]?.[person] ?? "";
 }
 
+function getVerbDetailsUrl(verb) {
+  if (verb?.sourceUrl) return verb.sourceUrl;
+  return `https://www.verbs.cat/en/conjugation/${encodeURIComponent(
+    verb?.infinitive ?? verb
+  )}.html`;
+}
+
 function getVerbRank(verb, index) {
   return typeof verb.rank === "number" ? verb.rank : index + 1;
 }
@@ -484,7 +491,7 @@ export default function App() {
           currentPrompt?.key,
         );
         setLastResult({
-          verb: currentPrompt?.verb?.infinitive,
+          verb: currentPrompt?.verb,
           translation: currentPrompt?.verb?.translation,
           person: currentPrompt?.person,
           tense: currentPrompt?.tense,
@@ -821,12 +828,20 @@ export default function App() {
         {showLastResult && lastResult && (
           <div className="last-result">
             <div className="last-title">
-              {lastResult.verb} — {lastResult.translation}
+              {lastResult.verb.infinitive} — {lastResult.translation}
             </div>
             <div className="last-meta">
               {PERSON_LABELS[lastResult.person]} · {TENSE_LABELS[lastResult.tense]}
             </div>
             <div className="last-answer">{lastResult.answer}</div>
+            <a
+              className="last-link"
+              href={getVerbDetailsUrl(lastResult.verb)}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Veure conjugació completa
+            </a>
           </div>
         )}
 

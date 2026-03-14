@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const DATA_PATH = path.join(__dirname, "..", "src", "data", "verbs.json");
+const DATA_PATH = path.join(__dirname, "..", "shared", "verbs.json");
 const PERSONS = ["jo", "tu", "ell", "nosaltres", "vosaltres", "ells"];
 const TENSES = [
   "present",

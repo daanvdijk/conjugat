@@ -5,6 +5,7 @@
     "regular": false,
     "group": "er",
     "rank": 1,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/37-ser.html",
     "tenses": {
       "present": {
         "jo": "soc",
@@ -68,6 +69,7 @@
     "regular": false,
     "group": "er",
     "rank": 2,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/39-haver.html",
     "tenses": {
       "present": {
         "jo": "he",
@@ -131,6 +133,7 @@
     "regular": false,
     "group": "ar",
     "rank": 3,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/41-anar.html",
     "tenses": {
       "present": {
         "jo": "vaig",
@@ -194,6 +197,7 @@
     "regular": false,
     "group": "er",
     "rank": 4,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/40-fer.html",
     "tenses": {
       "present": {
         "jo": "faig",
@@ -257,6 +261,7 @@
     "regular": false,
     "group": "ir",
     "rank": 5,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/38-tenir.html",
     "tenses": {
       "present": {
         "jo": "tinc",
@@ -320,6 +325,7 @@
     "regular": false,
     "group": "ir",
     "rank": 6,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/60-dir.html",
     "tenses": {
       "present": {
         "jo": "dic",
@@ -383,6 +389,7 @@
     "regular": false,
     "group": "ar",
     "rank": 7,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/42-estar.html",
     "tenses": {
       "present": {
         "jo": "estic",
@@ -446,6 +453,7 @@
     "regular": false,
     "group": "er",
     "rank": 8,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/52-poder.html",
     "tenses": {
       "present": {
         "jo": "puc",
@@ -509,6 +517,7 @@
     "regular": false,
     "group": "er",
     "rank": 9,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/59-veure.html",
     "tenses": {
       "present": {
         "jo": "veig",
@@ -572,6 +581,7 @@
     "regular": false,
     "group": "er",
     "rank": 10,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/51-saber.html",
     "tenses": {
       "present": {
         "jo": "sé",
@@ -635,6 +645,7 @@
     "regular": true,
     "group": "ar",
     "rank": 11,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/139-tornar.html",
     "tenses": {
       "present": {
         "jo": "torno",
@@ -698,6 +709,7 @@
     "regular": false,
     "group": "er",
     "rank": 12,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/43-voler.html",
     "tenses": {
       "present": {
         "jo": "vull",
@@ -761,6 +773,7 @@
     "regular": true,
     "group": "ar",
     "rank": 13,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1052-pelar.html",
     "tenses": {
       "present": {
         "jo": "pelo",
@@ -824,6 +837,7 @@
     "regular": true,
     "group": "ir",
     "rank": 14,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/35-sentir.html",
     "tenses": {
       "present": {
         "jo": "sento",
@@ -887,6 +901,7 @@
     "regular": true,
     "group": "ar",
     "rank": 15,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/134-semblar.html",
     "tenses": {
       "present": {
         "jo": "semblo",
@@ -950,6 +965,7 @@
     "regular": true,
     "group": "ar",
     "rank": 16,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/120-arribar.html",
     "tenses": {
       "present": {
         "jo": "arribo",
@@ -1013,6 +1029,7 @@
     "regular": true,
     "group": "ar",
     "rank": 17,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/50-donar.html",
     "tenses": {
       "present": {
         "jo": "dono",
@@ -1076,6 +1093,7 @@
     "regular": true,
     "group": "ar",
     "rank": 18,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/58-pensar.html",
     "tenses": {
       "present": {
         "jo": "penso",
@@ -1139,6 +1157,7 @@
     "regular": true,
     "group": "ar",
     "rank": 19,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/135-deixar.html",
     "tenses": {
       "present": {
         "jo": "deixo",
@@ -1202,6 +1221,7 @@
     "regular": true,
     "group": "ar",
     "rank": 20,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/69-passar.html",
     "tenses": {
       "present": {
         "jo": "passo",
@@ -1265,6 +1285,7 @@
     "regular": true,
     "group": "ar",
     "rank": 21,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/92-trobar.html",
     "tenses": {
       "present": {
         "jo": "trobo",
@@ -1328,6 +1349,7 @@
     "regular": true,
     "group": "ar",
     "rank": 22,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/140-mirar.html",
     "tenses": {
       "present": {
         "jo": "miro",
@@ -1391,6 +1413,7 @@
     "regular": true,
     "group": "ar",
     "rank": 23,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/219-matar.html",
     "tenses": {
       "present": {
         "jo": "mato",
@@ -1454,6 +1477,7 @@
     "regular": false,
     "group": "ar",
     "rank": 24,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/61-posar.html",
     "tenses": {
       "present": {
         "jo": "poso",
@@ -1517,6 +1541,7 @@
     "regular": true,
     "group": "ar",
     "rank": 25,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/46-parlar.html",
     "tenses": {
       "present": {
         "jo": "parlo",
@@ -1580,6 +1605,7 @@
     "regular": true,
     "group": "ar",
     "rank": 26,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/78-quedar.html",
     "tenses": {
       "present": {
         "jo": "quedo",
@@ -1643,6 +1669,7 @@
     "regular": false,
     "group": "ir",
     "rank": 28,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/75-sortir.html",
     "tenses": {
       "present": {
         "jo": "surto",
@@ -1706,6 +1733,7 @@
     "regular": true,
     "group": "er",
     "rank": 29,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/895-moldre.html",
     "tenses": {
       "present": {
         "jo": "molc",
@@ -1769,6 +1797,7 @@
     "regular": true,
     "group": "ar",
     "rank": 30,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/370-acabar.html",
     "tenses": {
       "present": {
         "jo": "acabo",
@@ -1832,6 +1861,7 @@
     "regular": true,
     "group": "ar",
     "rank": 31,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/55-preguntar.html",
     "tenses": {
       "present": {
         "jo": "pregunto",
@@ -1895,6 +1925,7 @@
     "regular": false,
     "group": "ir",
     "rank": 32,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/64-venir.html",
     "tenses": {
       "present": {
         "jo": "vinc",
@@ -1958,6 +1989,7 @@
     "regular": true,
     "group": "ar",
     "rank": 34,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/152-entrar.html",
     "tenses": {
       "present": {
         "jo": "entro",
@@ -2021,6 +2053,7 @@
     "regular": true,
     "group": "ar",
     "rank": 35,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/66-portar.html",
     "tenses": {
       "present": {
         "jo": "porto",
@@ -2084,6 +2117,7 @@
     "regular": true,
     "group": "ar",
     "rank": 36,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/62-demanar.html",
     "tenses": {
       "present": {
         "jo": "demano",
@@ -2147,6 +2181,7 @@
     "regular": true,
     "group": "ar",
     "rank": 37,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/161-agafar.html",
     "tenses": {
       "present": {
         "jo": "agafo",
@@ -2210,6 +2245,7 @@
     "regular": true,
     "group": "ar",
     "rank": 38,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/149-recordar.html",
     "tenses": {
       "present": {
         "jo": "recordo",
@@ -2273,6 +2309,7 @@
     "regular": true,
     "group": "ir",
     "rank": 39,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/184-vestir.html",
     "tenses": {
       "present": {
         "jo": "vesteixo",
@@ -2336,6 +2373,7 @@
     "regular": true,
     "group": "ar",
     "rank": 40,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/67-esperar.html",
     "tenses": {
       "present": {
         "jo": "espero",
@@ -2399,6 +2437,7 @@
     "regular": true,
     "group": "ar",
     "rank": 42,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/2049-calar.html",
     "tenses": {
       "present": {
         "jo": "calo",
@@ -2462,6 +2501,7 @@
     "regular": true,
     "group": "ar",
     "rank": 43,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/100-continuar.html",
     "tenses": {
       "present": {
         "jo": "continuo",
@@ -2525,6 +2565,7 @@
     "regular": true,
     "group": "ir",
     "rank": 44,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/48-obrir.html",
     "tenses": {
       "present": {
         "jo": "obro",
@@ -2588,6 +2629,7 @@
     "regular": false,
     "group": "er",
     "rank": 45,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/99-coneixer.html",
     "tenses": {
       "present": {
         "jo": "conec",
@@ -2651,6 +2693,7 @@
     "regular": true,
     "group": "er",
     "rank": 46,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/44-viure.html",
     "tenses": {
       "present": {
         "jo": "visc",
@@ -2714,6 +2757,7 @@
     "regular": true,
     "group": "ar",
     "rank": 47,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/491-parar.html",
     "tenses": {
       "present": {
         "jo": "paro",
@@ -2777,6 +2821,7 @@
     "regular": false,
     "group": "er",
     "rank": 48,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/770-fondre.html",
     "tenses": {
       "present": {
         "jo": "fonc",
@@ -2840,6 +2885,7 @@
     "regular": true,
     "group": "ir",
     "rank": 49,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/79-seguir.html",
     "tenses": {
       "present": {
         "jo": "segueixo",
@@ -2903,6 +2949,7 @@
     "regular": true,
     "group": "er",
     "rank": 50,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/263-entendre.html",
     "tenses": {
       "present": {
         "jo": "entenc",
@@ -2966,6 +3013,7 @@
     "regular": false,
     "group": "er",
     "rank": 51,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/435-treure.html",
     "tenses": {
       "present": {
         "jo": "trec",
@@ -3029,6 +3077,7 @@
     "regular": false,
     "group": "er",
     "rank": 52,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/57-prendre.html",
     "tenses": {
       "present": {
         "jo": "prenc",
@@ -3092,6 +3141,7 @@
     "regular": true,
     "group": "ar",
     "rank": 53,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/114-agradar.html",
     "tenses": {
       "present": {
         "jo": "agrado",
@@ -3155,6 +3205,7 @@
     "regular": false,
     "group": "er",
     "rank": 54,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/150-caure.html",
     "tenses": {
       "present": {
         "jo": "caic",
@@ -3218,6 +3269,7 @@
     "regular": true,
     "group": "er",
     "rank": 55,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/186-respondre.html",
     "tenses": {
       "present": {
         "jo": "responc",
@@ -3281,6 +3333,7 @@
     "regular": true,
     "group": "ir",
     "rank": 56,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/349-aconseguir.html",
     "tenses": {
       "present": {
         "jo": "aconsegueixo",
@@ -3344,6 +3397,7 @@
     "regular": true,
     "group": "er",
     "rank": 57,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/159-deure.html",
     "tenses": {
       "present": {
         "jo": "dec",
@@ -3407,6 +3461,7 @@
     "regular": true,
     "group": "er",
     "rank": 58,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/178-somriure.html",
     "tenses": {
       "present": {
         "jo": "somric",
@@ -3470,6 +3525,7 @@
     "regular": true,
     "group": "ar",
     "rank": 59,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/179-intentar.html",
     "tenses": {
       "present": {
         "jo": "intento",
@@ -3533,6 +3589,7 @@
     "regular": true,
     "group": "ir",
     "rank": 60,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/172-servir.html",
     "tenses": {
       "present": {
         "jo": "serveixo",
@@ -3596,6 +3653,7 @@
     "regular": true,
     "group": "er",
     "rank": 62,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/33-perdre.html",
     "tenses": {
       "present": {
         "jo": "perdo",
@@ -3659,6 +3717,7 @@
     "regular": true,
     "group": "ar",
     "rank": 63,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/469-cridar.html",
     "tenses": {
       "present": {
         "jo": "crido",
@@ -3722,6 +3781,7 @@
     "regular": true,
     "group": "ar",
     "rank": 64,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/580-presentar.html",
     "tenses": {
       "present": {
         "jo": "presento",
@@ -3785,6 +3845,7 @@
     "regular": true,
     "group": "ar",
     "rank": 65,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/586-tractar.html",
     "tenses": {
       "present": {
         "jo": "tracto",
@@ -3848,6 +3909,7 @@
     "regular": true,
     "group": "ir",
     "rank": 66,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/243-mantenir.html",
     "tenses": {
       "present": {
         "jo": "mantinc",
@@ -3911,6 +3973,7 @@
     "regular": true,
     "group": "er",
     "rank": 67,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/647-permetre.html",
     "tenses": {
       "present": {
         "jo": "permeto",
@@ -3974,6 +4037,7 @@
     "regular": true,
     "group": "ir",
     "rank": 68,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/148-morir.html",
     "tenses": {
       "present": {
         "jo": "moro",
@@ -4037,6 +4101,7 @@
     "regular": true,
     "group": "ar",
     "rank": 69,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/72-treballar.html",
     "tenses": {
       "present": {
         "jo": "treballo",
@@ -4100,6 +4165,7 @@
     "regular": true,
     "group": "ar",
     "rank": 70,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/441-considerar.html",
     "tenses": {
       "present": {
         "jo": "considero",
@@ -4163,6 +4229,7 @@
     "regular": true,
     "group": "ir",
     "rank": 71,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/144-partir.html",
     "tenses": {
       "present": {
         "jo": "parteixo",
@@ -4226,6 +4293,7 @@
     "regular": false,
     "group": "er",
     "rank": 72,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/56-creure.html",
     "tenses": {
       "present": {
         "jo": "crec",
@@ -4289,6 +4357,7 @@
     "regular": true,
     "group": "ar",
     "rank": 73,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/203-necessitar.html",
     "tenses": {
       "present": {
         "jo": "necessito",
@@ -4352,6 +4421,7 @@
     "regular": false,
     "group": "er",
     "rank": 74,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/925-asseure.html",
     "tenses": {
       "present": {
         "jo": "assec",
@@ -4415,6 +4485,7 @@
     "regular": true,
     "group": "ar",
     "rank": 76,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/45-menjar.html",
     "tenses": {
       "present": {
         "jo": "menjo",
@@ -4478,6 +4549,7 @@
     "regular": true,
     "group": "er",
     "rank": 77,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/70-escriure.html",
     "tenses": {
       "present": {
         "jo": "escric",
@@ -4541,6 +4613,7 @@
     "regular": true,
     "group": "er",
     "rank": 78,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/430-correr.html",
     "tenses": {
       "present": {
         "jo": "corro",
@@ -4604,6 +4677,7 @@
     "regular": true,
     "group": "ar",
     "rank": 79,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/407-suposar.html",
     "tenses": {
       "present": {
         "jo": "suposo",
@@ -4667,6 +4741,7 @@
     "regular": true,
     "group": "ir",
     "rank": 81,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/68-llegir.html",
     "tenses": {
       "present": {
         "jo": "llegeixo",
@@ -4730,6 +4805,7 @@
     "regular": true,
     "group": "ir",
     "rank": 82,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/316-dirigir.html",
     "tenses": {
       "present": {
         "jo": "dirigeixo",
@@ -4793,6 +4869,7 @@
     "regular": true,
     "group": "ir",
     "rank": 83,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/789-convertir.html",
     "tenses": {
       "present": {
         "jo": "converteixo",
@@ -4856,6 +4933,7 @@
     "regular": true,
     "group": "er",
     "rank": 84,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/171-apareixer.html",
     "tenses": {
       "present": {
         "jo": "aparec",
@@ -4919,6 +4997,7 @@
     "regular": true,
     "group": "er",
     "rank": 86,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/110-vendre.html",
     "tenses": {
       "present": {
         "jo": "venc",
@@ -4982,6 +5061,7 @@
     "regular": true,
     "group": "ar",
     "rank": 87,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/47-estimar.html",
     "tenses": {
       "present": {
         "jo": "estimo",
@@ -5045,6 +5125,7 @@
     "regular": true,
     "group": "ir",
     "rank": 88,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/222-produir.html",
     "tenses": {
       "present": {
         "jo": "produeixo",
@@ -5108,6 +5189,7 @@
     "regular": true,
     "group": "ar",
     "rank": 89,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/125-pujar.html",
     "tenses": {
       "present": {
         "jo": "pujo",
@@ -5171,6 +5253,7 @@
     "regular": true,
     "group": "ir",
     "rank": 90,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/314-decidir.html",
     "tenses": {
       "present": {
         "jo": "decideixo",
@@ -5234,6 +5317,7 @@
     "regular": true,
     "group": "ar",
     "rank": 91,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/507-girar.html",
     "tenses": {
       "present": {
         "jo": "giro",
@@ -5297,6 +5381,7 @@
     "regular": true,
     "group": "er",
     "rank": 92,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/192-rebre.html",
     "tenses": {
       "present": {
         "jo": "rebo",
@@ -5360,6 +5445,7 @@
     "regular": true,
     "group": "ir",
     "rank": 93,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/63-dormir.html",
     "tenses": {
       "present": {
         "jo": "dormo",
@@ -5423,6 +5509,7 @@
     "regular": true,
     "group": "ir",
     "rank": 94,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/394-afegir.html",
     "tenses": {
       "present": {
         "jo": "afegeixo",
@@ -5486,6 +5573,7 @@
     "regular": true,
     "group": "ar",
     "rank": 95,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/82-ajudar.html",
     "tenses": {
       "present": {
         "jo": "ajudo",
@@ -5549,6 +5637,7 @@
     "regular": true,
     "group": "er",
     "rank": 96,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1186-caldre.html",
     "tenses": {
       "present": {
         "jo": "-",
@@ -5612,6 +5701,7 @@
     "regular": true,
     "group": "ar",
     "rank": 97,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/132-volar.html",
     "tenses": {
       "present": {
         "jo": "volo",
@@ -5675,6 +5765,7 @@
     "regular": true,
     "group": "ar",
     "rank": 98,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/463-disposar.html",
     "tenses": {
       "present": {
         "jo": "disposo",
@@ -5738,6 +5829,7 @@
     "regular": true,
     "group": "ar",
     "rank": 99,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1092-aturar.html",
     "tenses": {
       "present": {
         "jo": "aturo",
@@ -5801,6 +5893,7 @@
     "regular": true,
     "group": "ar",
     "rank": 100,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/859-situar.html",
     "tenses": {
       "present": {
         "jo": "situo",
@@ -5864,6 +5957,7 @@
     "regular": true,
     "group": "ar",
     "rank": 101,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/610-formar.html",
     "tenses": {
       "present": {
         "jo": "formo",
@@ -5927,6 +6021,7 @@
     "regular": false,
     "group": "er",
     "rank": 102,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/84-riure.html",
     "tenses": {
       "present": {
         "jo": "ric",
@@ -5990,6 +6085,7 @@
     "regular": true,
     "group": "ar",
     "rank": 103,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/54-escoltar.html",
     "tenses": {
       "present": {
         "jo": "escolto",
@@ -6053,6 +6149,7 @@
     "regular": false,
     "group": "er",
     "rank": 105,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/717-moure.html",
     "tenses": {
       "present": {
         "jo": "moc",
@@ -6116,6 +6213,7 @@
     "regular": true,
     "group": "ar",
     "rank": 106,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/93-imaginar.html",
     "tenses": {
       "present": {
         "jo": "imagino",
@@ -6179,6 +6277,7 @@
     "regular": true,
     "group": "ar",
     "rank": 107,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/137-guanyar.html",
     "tenses": {
       "present": {
         "jo": "guanyo",
@@ -6242,6 +6341,7 @@
     "regular": true,
     "group": "ar",
     "rank": 108,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/596-marxar.html",
     "tenses": {
       "present": {
         "jo": "marxo",
@@ -6305,6 +6405,7 @@
     "regular": true,
     "group": "ar",
     "rank": 109,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/133-comptar.html",
     "tenses": {
       "present": {
         "jo": "compto",
@@ -6368,6 +6469,7 @@
     "regular": true,
     "group": "ar",
     "rank": 110,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/124-baixar.html",
     "tenses": {
       "present": {
         "jo": "baixo",
@@ -6431,6 +6533,7 @@
     "regular": true,
     "group": "ar",
     "rank": 111,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/736-observar.html",
     "tenses": {
       "present": {
         "jo": "observo",
@@ -6494,6 +6597,7 @@
     "regular": true,
     "group": "ar",
     "rank": 112,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/176-ocupar.html",
     "tenses": {
       "present": {
         "jo": "ocupo",
@@ -6557,6 +6661,7 @@
     "regular": true,
     "group": "ar",
     "rank": 113,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/347-mostrar.html",
     "tenses": {
       "present": {
         "jo": "mostro",
@@ -6620,6 +6725,7 @@
     "regular": true,
     "group": "ar",
     "rank": 114,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/88-canviar.html",
     "tenses": {
       "present": {
         "jo": "canvio",
@@ -6683,6 +6789,7 @@
     "regular": true,
     "group": "er",
     "rank": 115,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/116-comprendre.html",
     "tenses": {
       "present": {
         "jo": "comprenc",
@@ -6746,6 +6853,7 @@
     "regular": true,
     "group": "ir",
     "rank": 116,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/273-oferir.html",
     "tenses": {
       "present": {
         "jo": "ofereixo",
@@ -6809,6 +6917,7 @@
     "regular": true,
     "group": "ar",
     "rank": 117,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/108-oblidar.html",
     "tenses": {
       "present": {
         "jo": "oblido",
@@ -6872,6 +6981,7 @@
     "regular": true,
     "group": "ar",
     "rank": 119,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/101-crear.html",
     "tenses": {
       "present": {
         "jo": "creo",
@@ -6935,6 +7045,7 @@
     "regular": true,
     "group": "ar",
     "rank": 121,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/187-abandonar.html",
     "tenses": {
       "present": {
         "jo": "abandono",
@@ -6998,6 +7109,7 @@
     "regular": true,
     "group": "ar",
     "rank": 122,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/191-acompanyar.html",
     "tenses": {
       "present": {
         "jo": "acompanyo",
@@ -7061,6 +7173,7 @@
     "regular": true,
     "group": "ar",
     "rank": 123,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/205-acceptar.html",
     "tenses": {
       "present": {
         "jo": "accepto",
@@ -7124,6 +7237,7 @@
     "regular": true,
     "group": "ar",
     "rank": 124,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/857-anomenar.html",
     "tenses": {
       "present": {
         "jo": "anomeno",
@@ -7187,6 +7301,7 @@
     "regular": true,
     "group": "ar",
     "rank": 125,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/238-resultar.html",
     "tenses": {
       "present": {
         "jo": "resulto",
@@ -7250,6 +7365,7 @@
     "regular": true,
     "group": "ir",
     "rank": 126,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/884-esdevenir.html",
     "tenses": {
       "present": {
         "jo": "esdevinc",
@@ -7313,6 +7429,7 @@
     "regular": true,
     "group": "ar",
     "rank": 127,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1481-basar.html",
     "tenses": {
       "present": {
         "jo": "baso",
@@ -7376,6 +7493,7 @@
     "regular": true,
     "group": "ar",
     "rank": 128,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/495-assegurar.html",
     "tenses": {
       "present": {
         "jo": "asseguro",
@@ -7439,6 +7557,7 @@
     "regular": true,
     "group": "ar",
     "rank": 130,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/98-comprar.html",
     "tenses": {
       "present": {
         "jo": "compro",
@@ -7502,6 +7621,7 @@
     "regular": true,
     "group": "ir",
     "rank": 131,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/346-obtenir.html",
     "tenses": {
       "present": {
         "jo": "obtinc",
@@ -7565,6 +7685,7 @@
     "regular": true,
     "group": "ar",
     "rank": 132,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/211-evitar.html",
     "tenses": {
       "present": {
         "jo": "evito",
@@ -7628,6 +7749,7 @@
     "regular": true,
     "group": "er",
     "rank": 135,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/901-reconeixer.html",
     "tenses": {
       "present": {
         "jo": "reconec",
@@ -7691,6 +7813,7 @@
     "regular": true,
     "group": "ir",
     "rank": 136,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/188-unir.html",
     "tenses": {
       "present": {
         "jo": "uneixo",
@@ -7754,6 +7877,7 @@
     "regular": true,
     "group": "ar",
     "rank": 137,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/113-caminar.html",
     "tenses": {
       "present": {
         "jo": "camino",
@@ -7817,6 +7941,7 @@
     "regular": true,
     "group": "ir",
     "rank": 141,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/215-descobrir.html",
     "tenses": {
       "present": {
         "jo": "descobreixo",
@@ -7880,6 +8005,7 @@
     "regular": true,
     "group": "ir",
     "rank": 142,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/558-establir.html",
     "tenses": {
       "present": {
         "jo": "estableixo",
@@ -7943,6 +8069,7 @@
     "regular": false,
     "group": "er",
     "rank": 143,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/147-seure.html",
     "tenses": {
       "present": {
         "jo": "sec",
@@ -8006,6 +8133,7 @@
     "regular": true,
     "group": "ar",
     "rank": 144,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/568-contestar.html",
     "tenses": {
       "present": {
         "jo": "contesto",
@@ -8069,6 +8197,7 @@
     "regular": true,
     "group": "ar",
     "rank": 145,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/743-assenyalar.html",
     "tenses": {
       "present": {
         "jo": "assenyalo",
@@ -8132,6 +8261,7 @@
     "regular": true,
     "group": "ar",
     "rank": 146,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/371-notar.html",
     "tenses": {
       "present": {
         "jo": "noto",
@@ -8195,6 +8325,7 @@
     "regular": false,
     "group": "er",
     "rank": 147,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/458-sorprendre.html",
     "tenses": {
       "present": {
         "jo": "sorprenc",
@@ -8258,6 +8389,7 @@
     "regular": true,
     "group": "er",
     "rank": 148,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/220-neixer.html",
     "tenses": {
       "present": {
         "jo": "neixo",
@@ -8321,6 +8453,7 @@
     "regular": true,
     "group": "ir",
     "rank": 149,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/247-repetir.html",
     "tenses": {
       "present": {
         "jo": "repeteixo",
@@ -8384,6 +8517,7 @@
     "regular": true,
     "group": "ir",
     "rank": 150,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/236-fugir.html",
     "tenses": {
       "present": {
         "jo": "fujo",
@@ -8447,6 +8581,7 @@
     "regular": true,
     "group": "ar",
     "rank": 151,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/83-plorar.html",
     "tenses": {
       "present": {
         "jo": "ploro",
@@ -8510,6 +8645,7 @@
     "regular": true,
     "group": "ir",
     "rank": 152,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/160-existir.html",
     "tenses": {
       "present": {
         "jo": "existeixo",
@@ -8573,6 +8709,7 @@
     "regular": true,
     "group": "ar",
     "rank": 153,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/127-casar.html",
     "tenses": {
       "present": {
         "jo": "caso",
@@ -8636,6 +8773,7 @@
     "regular": true,
     "group": "ar",
     "rank": 154,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/876-representar.html",
     "tenses": {
       "present": {
         "jo": "represento",
@@ -8699,6 +8837,7 @@
     "regular": true,
     "group": "ir",
     "rank": 155,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/94-patir.html",
     "tenses": {
       "present": {
         "jo": "pateixo",
@@ -8762,6 +8901,7 @@
     "regular": true,
     "group": "er",
     "rank": 156,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/65-beure.html",
     "tenses": {
       "present": {
         "jo": "bec",
@@ -8825,6 +8965,7 @@
     "regular": true,
     "group": "ar",
     "rank": 157,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/201-utilitzar.html",
     "tenses": {
       "present": {
         "jo": "utilitzo",
@@ -8888,6 +9029,7 @@
     "regular": true,
     "group": "ir",
     "rank": 160,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/257-construir.html",
     "tenses": {
       "present": {
         "jo": "construeixo",
@@ -8951,6 +9093,7 @@
     "regular": true,
     "group": "ir",
     "rank": 161,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/166-omplir.html",
     "tenses": {
       "present": {
         "jo": "omplo",
@@ -9014,6 +9157,7 @@
     "regular": true,
     "group": "ar",
     "rank": 163,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/497-estudiar.html",
     "tenses": {
       "present": {
         "jo": "estudio",
@@ -9077,6 +9221,7 @@
     "regular": true,
     "group": "er",
     "rank": 165,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/365-desapareixer.html",
     "tenses": {
       "present": {
         "jo": "desaparec",
@@ -9140,6 +9285,7 @@
     "regular": true,
     "group": "ar",
     "rank": 166,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/244-separar.html",
     "tenses": {
       "present": {
         "jo": "separo",
@@ -9203,6 +9349,7 @@
     "regular": true,
     "group": "ar",
     "rank": 167,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/146-sopar.html",
     "tenses": {
       "present": {
         "jo": "sopo",
@@ -9266,6 +9413,7 @@
     "regular": true,
     "group": "ar",
     "rank": 169,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/86-ensenyar.html",
     "tenses": {
       "present": {
         "jo": "ensenyo",
@@ -9329,6 +9477,7 @@
     "regular": true,
     "group": "ir",
     "rank": 170,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1823-parir.html",
     "tenses": {
       "present": {
         "jo": "pareixo",
@@ -9392,6 +9541,7 @@
     "regular": true,
     "group": "er",
     "rank": 171,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/53-aprendre.html",
     "tenses": {
       "present": {
         "jo": "aprenc",
@@ -9455,6 +9605,7 @@
     "regular": true,
     "group": "er",
     "rank": 172,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/567-encendre.html",
     "tenses": {
       "present": {
         "jo": "encenc",
@@ -9518,6 +9669,7 @@
     "regular": true,
     "group": "ar",
     "rank": 173,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/154-dubtar.html",
     "tenses": {
       "present": {
         "jo": "dubto",
@@ -9581,6 +9733,7 @@
     "regular": true,
     "group": "ar",
     "rank": 174,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/2233-obrar.html",
     "tenses": {
       "present": {
         "jo": "obro",
@@ -9644,6 +9797,7 @@
     "regular": true,
     "group": "ar",
     "rank": 175,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/204-despertar.html",
     "tenses": {
       "present": {
         "jo": "desperto",
@@ -9707,6 +9861,7 @@
     "regular": true,
     "group": "ar",
     "rank": 176,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/856-esmentar.html",
     "tenses": {
       "present": {
         "jo": "esmento",
@@ -9770,6 +9925,7 @@
     "regular": true,
     "group": "ar",
     "rank": 177,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/720-iniciar.html",
     "tenses": {
       "present": {
         "jo": "inicio",
@@ -9833,6 +9989,7 @@
     "regular": true,
     "group": "ar",
     "rank": 179,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/103-desitjar.html",
     "tenses": {
       "present": {
         "jo": "desitjo",
@@ -9896,6 +10053,7 @@
     "regular": true,
     "group": "ar",
     "rank": 180,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/401-demostrar.html",
     "tenses": {
       "present": {
         "jo": "demostro",
@@ -9959,6 +10117,7 @@
     "regular": true,
     "group": "ir",
     "rank": 181,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/888-recollir.html",
     "tenses": {
       "present": {
         "jo": "recullo",
@@ -10022,6 +10181,7 @@
     "regular": true,
     "group": "ir",
     "rank": 183,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/579-constituir.html",
     "tenses": {
       "present": {
         "jo": "constitueixo",
@@ -10085,6 +10245,7 @@
     "regular": true,
     "group": "ar",
     "rank": 184,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/733-fixar.html",
     "tenses": {
       "present": {
         "jo": "fixo",
@@ -10148,6 +10309,7 @@
     "regular": true,
     "group": "ar",
     "rank": 185,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/536-aprofitar.html",
     "tenses": {
       "present": {
         "jo": "aprofito",
@@ -10211,6 +10373,7 @@
     "regular": true,
     "group": "ar",
     "rank": 186,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/782-travessar.html",
     "tenses": {
       "present": {
         "jo": "travesso",
@@ -10274,6 +10437,7 @@
     "regular": true,
     "group": "ar",
     "rank": 187,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/155-callar.html",
     "tenses": {
       "present": {
         "jo": "callo",
@@ -10337,6 +10501,7 @@
     "regular": true,
     "group": "er",
     "rank": 188,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/902-preveure.html",
     "tenses": {
       "present": {
         "jo": "preveig",
@@ -10400,6 +10565,7 @@
     "regular": true,
     "group": "ar",
     "rank": 189,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/121-interessar.html",
     "tenses": {
       "present": {
         "jo": "interesso",
@@ -10463,6 +10629,7 @@
     "regular": true,
     "group": "ar",
     "rank": 190,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/672-proposar.html",
     "tenses": {
       "present": {
         "jo": "proposo",
@@ -10526,6 +10693,7 @@
     "regular": true,
     "group": "ar",
     "rank": 191,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/267-celebrar.html",
     "tenses": {
       "present": {
         "jo": "celebro",
@@ -10589,6 +10757,7 @@
     "regular": true,
     "group": "ar",
     "rank": 192,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/117-informar.html",
     "tenses": {
       "present": {
         "jo": "informo",
@@ -10652,6 +10821,7 @@
     "regular": true,
     "group": "ar",
     "rank": 193,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/255-provar.html",
     "tenses": {
       "present": {
         "jo": "provo",
@@ -10715,6 +10885,7 @@
     "regular": true,
     "group": "ar",
     "rank": 194,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/575-contemplar.html",
     "tenses": {
       "present": {
         "jo": "contemplo",
@@ -10778,6 +10949,7 @@
     "regular": true,
     "group": "ar",
     "rank": 195,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/343-saltar.html",
     "tenses": {
       "present": {
         "jo": "salto",
@@ -10841,6 +11013,7 @@
     "regular": true,
     "group": "ar",
     "rank": 196,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/250-realitzar.html",
     "tenses": {
       "present": {
         "jo": "realitzo",
@@ -10904,6 +11077,7 @@
     "regular": true,
     "group": "ar",
     "rank": 197,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1190-clavar.html",
     "tenses": {
       "present": {
         "jo": "clavo",
@@ -10967,6 +11141,7 @@
     "regular": true,
     "group": "ar",
     "rank": 198,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/368-sonar.html",
     "tenses": {
       "present": {
         "jo": "sono",
@@ -11030,6 +11205,7 @@
     "regular": true,
     "group": "ar",
     "rank": 199,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/301-penjar.html",
     "tenses": {
       "present": {
         "jo": "penjo",
@@ -11093,6 +11269,7 @@
     "regular": true,
     "group": "ir",
     "rank": 200,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/143-protegir.html",
     "tenses": {
       "present": {
         "jo": "protegeixo",
@@ -11156,6 +11333,7 @@
     "regular": true,
     "group": "ar",
     "rank": 201,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/709-actuar.html",
     "tenses": {
       "present": {
         "jo": "actuo",
@@ -11219,6 +11397,7 @@
     "regular": true,
     "group": "ar",
     "rank": 202,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/640-determinar.html",
     "tenses": {
       "present": {
         "jo": "determino",
@@ -11282,6 +11461,7 @@
     "regular": true,
     "group": "ar",
     "rank": 203,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/175-anunciar.html",
     "tenses": {
       "present": {
         "jo": "anuncio",
@@ -11345,6 +11525,7 @@
     "regular": true,
     "group": "ar",
     "rank": 204,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/639-estirar.html",
     "tenses": {
       "present": {
         "jo": "estiro",
@@ -11408,6 +11589,7 @@
     "regular": true,
     "group": "er",
     "rank": 205,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/712-estendre.html",
     "tenses": {
       "present": {
         "jo": "estenc",
@@ -11471,6 +11653,7 @@
     "regular": true,
     "group": "er",
     "rank": 206,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/266-incloure.html",
     "tenses": {
       "present": {
         "jo": "incloc",
@@ -11534,6 +11717,7 @@
     "regular": true,
     "group": "ar",
     "rank": 207,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/299-guardar.html",
     "tenses": {
       "present": {
         "jo": "guardo",
@@ -11597,6 +11781,7 @@
     "regular": true,
     "group": "ir",
     "rank": 208,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/278-reunir.html",
     "tenses": {
       "present": {
         "jo": "reuneixo",
@@ -11660,6 +11845,7 @@
     "regular": true,
     "group": "ar",
     "rank": 209,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/993-apartar.html",
     "tenses": {
       "present": {
         "jo": "aparto",
@@ -11723,6 +11909,7 @@
     "regular": true,
     "group": "ar",
     "rank": 210,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/622-afirmar.html",
     "tenses": {
       "present": {
         "jo": "afirmo",
@@ -11786,6 +11973,7 @@
     "regular": true,
     "group": "ir",
     "rank": 211,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/240-ferir.html",
     "tenses": {
       "present": {
         "jo": "fereixo",
@@ -11849,6 +12037,7 @@
     "regular": true,
     "group": "ir",
     "rank": 212,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/74-insistir.html",
     "tenses": {
       "present": {
         "jo": "insisteixo",
@@ -11912,6 +12101,7 @@
     "regular": true,
     "group": "ar",
     "rank": 214,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/218-lluitar.html",
     "tenses": {
       "present": {
         "jo": "lluito",
@@ -11975,6 +12165,7 @@
     "regular": true,
     "group": "ar",
     "rank": 215,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/621-afectar.html",
     "tenses": {
       "present": {
         "jo": "afecto",
@@ -12038,6 +12229,7 @@
     "regular": true,
     "group": "ar",
     "rank": 216,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/362-tirar.html",
     "tenses": {
       "present": {
         "jo": "tiro",
@@ -12101,6 +12293,7 @@
     "regular": true,
     "group": "ar",
     "rank": 217,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1007-allunyar.html",
     "tenses": {
       "present": {
         "jo": "allunyo",
@@ -12164,6 +12357,7 @@
     "regular": true,
     "group": "ar",
     "rank": 218,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/195-faltar.html",
     "tenses": {
       "present": {
         "jo": "falto",
@@ -12227,6 +12421,7 @@
     "regular": true,
     "group": "ar",
     "rank": 219,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/32-cantar.html",
     "tenses": {
       "present": {
         "jo": "canto",
@@ -12290,6 +12485,7 @@
     "regular": true,
     "group": "ar",
     "rank": 220,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/2080-preocupar.html",
     "tenses": {
       "present": {
         "jo": "preocupo",
@@ -12353,6 +12549,7 @@
     "regular": true,
     "group": "er",
     "rank": 221,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/91-creixer.html",
     "tenses": {
       "present": {
         "jo": "creixo",
@@ -12416,6 +12613,7 @@
     "regular": true,
     "group": "ar",
     "rank": 222,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/544-participar.html",
     "tenses": {
       "present": {
         "jo": "participo",
@@ -12479,6 +12677,7 @@
     "regular": true,
     "group": "ar",
     "rank": 223,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/165-costar.html",
     "tenses": {
       "present": {
         "jo": "costo",
@@ -12542,6 +12741,7 @@
     "regular": true,
     "group": "ar",
     "rank": 224,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/755-aguantar.html",
     "tenses": {
       "present": {
         "jo": "aguanto",
@@ -12605,6 +12805,7 @@
     "regular": true,
     "group": "ar",
     "rank": 225,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/173-dinar.html",
     "tenses": {
       "present": {
         "jo": "dino",
@@ -12668,6 +12869,7 @@
     "regular": true,
     "group": "ar",
     "rank": 226,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1412-restar.html",
     "tenses": {
       "present": {
         "jo": "resto",
@@ -12731,6 +12933,7 @@
     "regular": true,
     "group": "ir",
     "rank": 227,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/214-complir.html",
     "tenses": {
       "present": {
         "jo": "compleixo",
@@ -12794,6 +12997,7 @@
     "regular": true,
     "group": "ir",
     "rank": 228,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1011-referir.html",
     "tenses": {
       "present": {
         "jo": "refereixo",
@@ -12857,6 +13061,7 @@
     "regular": true,
     "group": "ar",
     "rank": 229,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/547-augmentar.html",
     "tenses": {
       "present": {
         "jo": "augmento",
@@ -12920,6 +13125,7 @@
     "regular": true,
     "group": "ir",
     "rank": 230,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/118-conduir.html",
     "tenses": {
       "present": {
         "jo": "condueixo",
@@ -12983,6 +13189,7 @@
     "regular": true,
     "group": "er",
     "rank": 231,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/726-pertanyer.html",
     "tenses": {
       "present": {
         "jo": "pertanyo",
@@ -13046,6 +13253,7 @@
     "regular": true,
     "group": "ar",
     "rank": 232,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/382-declarar.html",
     "tenses": {
       "present": {
         "jo": "declaro",
@@ -13109,6 +13317,7 @@
     "regular": true,
     "group": "ar",
     "rank": 233,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/348-tallar.html",
     "tenses": {
       "present": {
         "jo": "tallo",
@@ -13172,6 +13381,7 @@
     "regular": true,
     "group": "ar",
     "rank": 234,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1001-defensar.html",
     "tenses": {
       "present": {
         "jo": "defenso",
@@ -13235,6 +13445,7 @@
     "regular": true,
     "group": "ir",
     "rank": 235,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/318-compartir.html",
     "tenses": {
       "present": {
         "jo": "comparteixo",
@@ -13298,6 +13509,7 @@
     "regular": true,
     "group": "ar",
     "rank": 236,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/605-escapar.html",
     "tenses": {
       "present": {
         "jo": "escapo",
@@ -13361,6 +13573,7 @@
     "regular": true,
     "group": "ar",
     "rank": 237,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/670-limitar.html",
     "tenses": {
       "present": {
         "jo": "limito",
@@ -13424,6 +13637,7 @@
     "regular": true,
     "group": "ar",
     "rank": 238,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/359-perdonar.html",
     "tenses": {
       "present": {
         "jo": "perdono",
@@ -13487,6 +13701,7 @@
     "regular": true,
     "group": "ar",
     "rank": 239,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/197-acostumar.html",
     "tenses": {
       "present": {
         "jo": "acostumo",
@@ -13550,6 +13765,7 @@
     "regular": true,
     "group": "ar",
     "rank": 240,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/542-robar.html",
     "tenses": {
       "present": {
         "jo": "robo",
@@ -13613,6 +13829,7 @@
     "regular": true,
     "group": "er",
     "rank": 241,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/452-correspondre.html",
     "tenses": {
       "present": {
         "jo": "corresponc",
@@ -13676,6 +13893,7 @@
     "regular": true,
     "group": "ar",
     "rank": 244,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/237-respirar.html",
     "tenses": {
       "present": {
         "jo": "respiro",
@@ -13739,6 +13957,7 @@
     "regular": true,
     "group": "ar",
     "rank": 245,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1032-centrar.html",
     "tenses": {
       "present": {
         "jo": "centro",
@@ -13802,6 +14021,7 @@
     "regular": true,
     "group": "ar",
     "rank": 246,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/528-comprovar.html",
     "tenses": {
       "present": {
         "jo": "comprovo",
@@ -13865,6 +14085,7 @@
     "regular": true,
     "group": "ar",
     "rank": 247,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/484-salvar.html",
     "tenses": {
       "present": {
         "jo": "salvo",
@@ -13928,6 +14149,7 @@
     "regular": true,
     "group": "ar",
     "rank": 248,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/304-confiar.html",
     "tenses": {
       "present": {
         "jo": "confio",
@@ -13991,6 +14213,7 @@
     "regular": true,
     "group": "ar",
     "rank": 249,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/587-installar.html",
     "tenses": {
       "present": {
         "jo": "instal·lo",
@@ -14054,6 +14277,7 @@
     "regular": true,
     "group": "ar",
     "rank": 250,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/533-comentar.html",
     "tenses": {
       "present": {
         "jo": "comento",
@@ -14117,6 +14341,7 @@
     "regular": true,
     "group": "ar",
     "rank": 252,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/638-retirar.html",
     "tenses": {
       "present": {
         "jo": "retiro",
@@ -14180,6 +14405,7 @@
     "regular": true,
     "group": "ir",
     "rank": 253,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/289-preferir.html",
     "tenses": {
       "present": {
         "jo": "prefereixo",
@@ -14243,6 +14469,7 @@
     "regular": true,
     "group": "ar",
     "rank": 254,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/585-dominar.html",
     "tenses": {
       "present": {
         "jo": "domino",
@@ -14306,6 +14533,7 @@
     "regular": false,
     "group": "er",
     "rank": 255,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/129-valer.html",
     "tenses": {
       "present": {
         "jo": "valc",
@@ -14369,6 +14597,7 @@
     "regular": true,
     "group": "ir",
     "rank": 256,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/598-contenir.html",
     "tenses": {
       "present": {
         "jo": "continc",
@@ -14432,6 +14661,7 @@
     "regular": true,
     "group": "ar",
     "rank": 257,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/692-superar.html",
     "tenses": {
       "present": {
         "jo": "supero",
@@ -14495,6 +14725,7 @@
     "regular": true,
     "group": "er",
     "rank": 259,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/81-cabre.html",
     "tenses": {
       "present": {
         "jo": "cabo",
@@ -14558,6 +14789,7 @@
     "regular": true,
     "group": "ar",
     "rank": 260,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/769-apuntar.html",
     "tenses": {
       "present": {
         "jo": "apunto",
@@ -14621,6 +14853,7 @@
     "regular": true,
     "group": "ar",
     "rank": 261,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/664-conservar.html",
     "tenses": {
       "present": {
         "jo": "conservo",
@@ -14684,6 +14917,7 @@
     "regular": true,
     "group": "ar",
     "rank": 263,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1280-inclinar.html",
     "tenses": {
       "present": {
         "jo": "inclino",
@@ -14747,6 +14981,7 @@
     "regular": true,
     "group": "er",
     "rank": 264,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/459-dependre.html",
     "tenses": {
       "present": {
         "jo": "depenc",
@@ -14810,6 +15045,7 @@
     "regular": true,
     "group": "er",
     "rank": 265,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/427-romandre.html",
     "tenses": {
       "present": {
         "jo": "romanc",
@@ -14873,6 +15109,7 @@
     "regular": true,
     "group": "er",
     "rank": 266,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/619-recorrer.html",
     "tenses": {
       "present": {
         "jo": "recorro",
@@ -14936,6 +15173,7 @@
     "regular": true,
     "group": "er",
     "rank": 267,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/816-resoldre.html",
     "tenses": {
       "present": {
         "jo": "resolc",
@@ -14999,6 +15237,7 @@
     "regular": true,
     "group": "er",
     "rank": 268,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/384-admetre.html",
     "tenses": {
       "present": {
         "jo": "admeto",
@@ -15062,6 +15301,7 @@
     "regular": true,
     "group": "ar",
     "rank": 269,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/767-tremolar.html",
     "tenses": {
       "present": {
         "jo": "tremolo",
@@ -15125,6 +15365,7 @@
     "regular": true,
     "group": "ar",
     "rank": 270,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1118-relacionar.html",
     "tenses": {
       "present": {
         "jo": "relaciono",
@@ -15188,6 +15429,7 @@
     "regular": true,
     "group": "ar",
     "rank": 271,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/869-convidar.html",
     "tenses": {
       "present": {
         "jo": "convido",
@@ -15251,6 +15493,7 @@
     "regular": true,
     "group": "ir",
     "rank": 272,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1099-assentir.html",
     "tenses": {
       "present": {
         "jo": "assenteixo",
@@ -15314,6 +15557,7 @@
     "regular": true,
     "group": "ar",
     "rank": 273,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/634-murmurar.html",
     "tenses": {
       "present": {
         "jo": "murmuro",
@@ -15377,6 +15621,7 @@
     "regular": true,
     "group": "er",
     "rank": 274,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/419-satisfer.html",
     "tenses": {
       "present": {
         "jo": "satisfaig",
@@ -15440,6 +15685,7 @@
     "regular": true,
     "group": "ar",
     "rank": 275,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/2647-envoltar.html",
     "tenses": {
       "present": {
         "jo": "envolto",
@@ -15503,6 +15749,7 @@
     "regular": true,
     "group": "ar",
     "rank": 276,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1157-soldar.html",
     "tenses": {
       "present": {
         "jo": "soldo",
@@ -15566,6 +15813,7 @@
     "regular": true,
     "group": "ir",
     "rank": 277,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/248-reduir.html",
     "tenses": {
       "present": {
         "jo": "redueixo",
@@ -15629,6 +15877,7 @@
     "regular": true,
     "group": "ar",
     "rank": 278,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/956-fundar.html",
     "tenses": {
       "present": {
         "jo": "fundo",
@@ -15692,6 +15941,7 @@
     "regular": true,
     "group": "er",
     "rank": 280,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/921-interrompre.html",
     "tenses": {
       "present": {
         "jo": "interrompo",
@@ -15755,6 +16005,7 @@
     "regular": true,
     "group": "ar",
     "rank": 281,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/724-expressar.html",
     "tenses": {
       "present": {
         "jo": "expresso",
@@ -15818,6 +16069,7 @@
     "regular": true,
     "group": "ar",
     "rank": 282,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/271-funcionar.html",
     "tenses": {
       "present": {
         "jo": "funciono",
@@ -15881,6 +16133,7 @@
     "regular": true,
     "group": "ar",
     "rank": 283,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/123-visitar.html",
     "tenses": {
       "present": {
         "jo": "visito",
@@ -15944,6 +16197,7 @@
     "regular": true,
     "group": "ar",
     "rank": 284,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/943-usar.html",
     "tenses": {
       "present": {
         "jo": "uso",
@@ -16007,6 +16261,7 @@
     "regular": true,
     "group": "ar",
     "rank": 285,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/352-saludar.html",
     "tenses": {
       "present": {
         "jo": "saludo",
@@ -16070,6 +16325,7 @@
     "regular": true,
     "group": "ir",
     "rank": 286,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1012-adormir.html",
     "tenses": {
       "present": {
         "jo": "adormo",
@@ -16133,6 +16389,7 @@
     "regular": true,
     "group": "ir",
     "rank": 287,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/564-impedir.html",
     "tenses": {
       "present": {
         "jo": "impedeixo",
@@ -16196,6 +16453,7 @@
     "regular": true,
     "group": "ar",
     "rank": 289,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/369-ordenar.html",
     "tenses": {
       "present": {
         "jo": "ordeno",
@@ -16259,6 +16517,7 @@
     "regular": true,
     "group": "ar",
     "rank": 290,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1107-disparar.html",
     "tenses": {
       "present": {
         "jo": "disparo",
@@ -16322,6 +16581,7 @@
     "regular": true,
     "group": "ir",
     "rank": 292,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/322-exigir.html",
     "tenses": {
       "present": {
         "jo": "exigeixo",
@@ -16385,6 +16645,7 @@
     "regular": true,
     "group": "er",
     "rank": 293,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/437-pretendre.html",
     "tenses": {
       "present": {
         "jo": "pretenc",
@@ -16448,6 +16709,7 @@
     "regular": true,
     "group": "er",
     "rank": 294,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/34-temer.html",
     "tenses": {
       "present": {
         "jo": "temo",
@@ -16511,6 +16773,7 @@
     "regular": true,
     "group": "ar",
     "rank": 295,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/472-exposar.html",
     "tenses": {
       "present": {
         "jo": "exposo",
@@ -16574,6 +16837,7 @@
     "regular": true,
     "group": "ar",
     "rank": 296,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/213-contar.html",
     "tenses": {
       "present": {
         "jo": "conto",
@@ -16637,6 +16901,7 @@
     "regular": true,
     "group": "er",
     "rank": 298,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/842-descriure.html",
     "tenses": {
       "present": {
         "jo": "descric",
@@ -16700,6 +16965,7 @@
     "regular": true,
     "group": "ir",
     "rank": 299,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/660-intervenir.html",
     "tenses": {
       "present": {
         "jo": "intervinc",
@@ -16763,6 +17029,7 @@
     "regular": true,
     "group": "ar",
     "rank": 300,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/483-cremar.html",
     "tenses": {
       "present": {
         "jo": "cremo",
@@ -16826,6 +17093,7 @@
     "regular": true,
     "group": "ir",
     "rank": 301,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/261-concedir.html",
     "tenses": {
       "present": {
         "jo": "concedeixo",
@@ -16889,6 +17157,7 @@
     "regular": true,
     "group": "ar",
     "rank": 302,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/707-signar.html",
     "tenses": {
       "present": {
         "jo": "signo",
@@ -16952,6 +17221,7 @@
     "regular": true,
     "group": "ar",
     "rank": 303,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/290-confirmar.html",
     "tenses": {
       "present": {
         "jo": "confirmo",
@@ -17015,6 +17285,7 @@
     "regular": true,
     "group": "ir",
     "rank": 304,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/225-cobrir.html",
     "tenses": {
       "present": {
         "jo": "cobreixo",
@@ -17078,6 +17349,7 @@
     "regular": true,
     "group": "ar",
     "rank": 305,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/659-imposar.html",
     "tenses": {
       "present": {
         "jo": "imposo",
@@ -17141,6 +17413,7 @@
     "regular": true,
     "group": "ar",
     "rank": 307,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/554-organitzar.html",
     "tenses": {
       "present": {
         "jo": "organitzo",
@@ -17204,6 +17477,7 @@
     "regular": true,
     "group": "ar",
     "rank": 309,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1127-abaixar.html",
     "tenses": {
       "present": {
         "jo": "abaixo",
@@ -17267,6 +17541,7 @@
     "regular": true,
     "group": "ar",
     "rank": 312,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/801-destinar.html",
     "tenses": {
       "present": {
         "jo": "destino",
@@ -17330,6 +17605,7 @@
     "regular": true,
     "group": "ir",
     "rank": 313,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/180-gaudir.html",
     "tenses": {
       "present": {
         "jo": "gaudeixo",
@@ -17393,6 +17669,7 @@
     "regular": true,
     "group": "ar",
     "rank": 314,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/404-desenvolupar.html",
     "tenses": {
       "present": {
         "jo": "desenvolupo",
@@ -17456,6 +17733,7 @@
     "regular": true,
     "group": "ar",
     "rank": 315,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/76-triar.html",
     "tenses": {
       "present": {
         "jo": "trio",
@@ -17519,6 +17797,7 @@
     "regular": true,
     "group": "ir",
     "rank": 316,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/468-definir.html",
     "tenses": {
       "present": {
         "jo": "defineixo",
@@ -17582,6 +17861,7 @@
     "regular": true,
     "group": "ar",
     "rank": 317,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/381-controlar.html",
     "tenses": {
       "present": {
         "jo": "controlo",
@@ -17645,6 +17925,7 @@
     "regular": true,
     "group": "ir",
     "rank": 318,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/436-adquirir.html",
     "tenses": {
       "present": {
         "jo": "adquireixo",
@@ -17708,6 +17989,7 @@
     "regular": true,
     "group": "ir",
     "rank": 319,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/560-distingir.html",
     "tenses": {
       "present": {
         "jo": "distingeixo",
@@ -17771,6 +18053,7 @@
     "regular": true,
     "group": "ar",
     "rank": 320,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/391-importar.html",
     "tenses": {
       "present": {
         "jo": "importo",
@@ -17834,6 +18117,7 @@
     "regular": true,
     "group": "ir",
     "rank": 321,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/272-introduir.html",
     "tenses": {
       "present": {
         "jo": "introdueixo",
@@ -17897,6 +18181,7 @@
     "regular": true,
     "group": "ar",
     "rank": 322,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1040-incorporar.html",
     "tenses": {
       "present": {
         "jo": "incorporo",
@@ -17960,6 +18245,7 @@
     "regular": true,
     "group": "ar",
     "rank": 324,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1089-suportar.html",
     "tenses": {
       "present": {
         "jo": "suporto",
@@ -18023,6 +18309,7 @@
     "regular": true,
     "group": "ir",
     "rank": 325,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/340-destruir.html",
     "tenses": {
       "present": {
         "jo": "destrueixo",
@@ -18086,6 +18373,7 @@
     "regular": true,
     "group": "ar",
     "rank": 326,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/635-avisar.html",
     "tenses": {
       "present": {
         "jo": "aviso",
@@ -18149,6 +18437,7 @@
     "regular": true,
     "group": "ar",
     "rank": 327,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/920-passejar.html",
     "tenses": {
       "present": {
         "jo": "passejo",
@@ -18212,6 +18501,7 @@
     "regular": true,
     "group": "er",
     "rank": 328,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/854-prometre.html",
     "tenses": {
       "present": {
         "jo": "prometo",
@@ -18275,6 +18565,7 @@
     "regular": true,
     "group": "ar",
     "rank": 329,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1959-gosar.html",
     "tenses": {
       "present": {
         "jo": "goso",
@@ -18338,6 +18629,7 @@
     "regular": true,
     "group": "ar",
     "rank": 330,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/741-examinar.html",
     "tenses": {
       "present": {
         "jo": "examino",
@@ -18401,6 +18693,7 @@
     "regular": true,
     "group": "er",
     "rank": 332,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/805-empenyer.html",
     "tenses": {
       "present": {
         "jo": "empenyo",
@@ -18464,6 +18757,7 @@
     "regular": true,
     "group": "ar",
     "rank": 333,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/809-traslladar.html",
     "tenses": {
       "present": {
         "jo": "trasllado",
@@ -18527,6 +18821,7 @@
     "regular": true,
     "group": "ar",
     "rank": 334,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/207-illuminar.html",
     "tenses": {
       "present": {
         "jo": "il·lumino",
@@ -18590,6 +18885,7 @@
     "regular": true,
     "group": "ir",
     "rank": 335,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/887-posseir.html",
     "tenses": {
       "present": {
         "jo": "posseeixo",
@@ -18653,6 +18949,7 @@
     "regular": true,
     "group": "ar",
     "rank": 336,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/274-confessar.html",
     "tenses": {
       "present": {
         "jo": "confesso",
@@ -18716,6 +19013,7 @@
     "regular": true,
     "group": "er",
     "rank": 337,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1017-soler.html",
     "tenses": {
       "present": {
         "jo": "solc",
@@ -18779,6 +19077,7 @@
     "regular": true,
     "group": "ar",
     "rank": 338,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/264-alliberar.html",
     "tenses": {
       "present": {
         "jo": "allibero",
@@ -18842,6 +19141,7 @@
     "regular": true,
     "group": "ar",
     "rank": 339,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/969-enfonsar.html",
     "tenses": {
       "present": {
         "jo": "enfonso",
@@ -18905,6 +19205,7 @@
     "regular": true,
     "group": "ar",
     "rank": 342,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/307-acusar.html",
     "tenses": {
       "present": {
         "jo": "acuso",
@@ -18968,6 +19269,7 @@
     "regular": true,
     "group": "er",
     "rank": 343,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/494-cometre.html",
     "tenses": {
       "present": {
         "jo": "cometo",
@@ -19031,6 +19333,7 @@
     "regular": true,
     "group": "ir",
     "rank": 344,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/363-cedir.html",
     "tenses": {
       "present": {
         "jo": "cedeixo",
@@ -19094,6 +19397,7 @@
     "regular": true,
     "group": "ir",
     "rank": 345,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1448-exercir.html",
     "tenses": {
       "present": {
         "jo": "exerceixo",
@@ -19157,6 +19461,7 @@
     "regular": true,
     "group": "ar",
     "rank": 346,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/376-vigilar.html",
     "tenses": {
       "present": {
         "jo": "vigilo",
@@ -19220,6 +19525,7 @@
     "regular": true,
     "group": "er",
     "rank": 347,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1323-sotmetre.html",
     "tenses": {
       "present": {
         "jo": "sotmeto",
@@ -19283,6 +19589,7 @@
     "regular": true,
     "group": "ar",
     "rank": 349,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/2229-plantejar.html",
     "tenses": {
       "present": {
         "jo": "plantejo",
@@ -19346,6 +19653,7 @@
     "regular": true,
     "group": "ar",
     "rank": 350,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/342-espantar.html",
     "tenses": {
       "present": {
         "jo": "espanto",
@@ -19409,6 +19717,7 @@
     "regular": true,
     "group": "ir",
     "rank": 351,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/315-convenir.html",
     "tenses": {
       "present": {
         "jo": "convinc",
@@ -19472,6 +19781,7 @@
     "regular": true,
     "group": "ir",
     "rank": 352,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/990-advertir.html",
     "tenses": {
       "present": {
         "jo": "adverteixo",
@@ -19535,6 +19845,7 @@
     "regular": true,
     "group": "ar",
     "rank": 353,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1178-nomenar.html",
     "tenses": {
       "present": {
         "jo": "nomeno",
@@ -19598,6 +19909,7 @@
     "regular": true,
     "group": "ar",
     "rank": 354,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1204-escampar.html",
     "tenses": {
       "present": {
         "jo": "escampo",
@@ -19661,6 +19973,7 @@
     "regular": true,
     "group": "ar",
     "rank": 356,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/983-plantar.html",
     "tenses": {
       "present": {
         "jo": "planto",
@@ -19724,6 +20037,7 @@
     "regular": true,
     "group": "ar",
     "rank": 357,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/683-manifestar.html",
     "tenses": {
       "present": {
         "jo": "manifesto",
@@ -19787,6 +20101,7 @@
     "regular": true,
     "group": "ar",
     "rank": 358,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1139-comportar.html",
     "tenses": {
       "present": {
         "jo": "comporto",
@@ -19850,6 +20165,7 @@
     "regular": true,
     "group": "ir",
     "rank": 359,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/583-substituir.html",
     "tenses": {
       "present": {
         "jo": "substitueixo",
@@ -19913,6 +20229,7 @@
     "regular": true,
     "group": "ar",
     "rank": 360,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/402-causar.html",
     "tenses": {
       "present": {
         "jo": "causo",
@@ -19976,6 +20293,7 @@
     "regular": true,
     "group": "ar",
     "rank": 361,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/953-durar.html",
     "tenses": {
       "present": {
         "jo": "duro",
@@ -20039,6 +20357,7 @@
     "regular": true,
     "group": "er",
     "rank": 362,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/714-desfer.html",
     "tenses": {
       "present": {
         "jo": "desfaig",
@@ -20102,6 +20421,7 @@
     "regular": true,
     "group": "ir",
     "rank": 363,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/771-succeir.html",
     "tenses": {
       "present": {
         "jo": "succeeixo",
@@ -20165,6 +20485,7 @@
     "regular": true,
     "group": "ar",
     "rank": 365,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/190-alegrar.html",
     "tenses": {
       "present": {
         "jo": "alegro",
@@ -20228,6 +20549,7 @@
     "regular": true,
     "group": "ar",
     "rank": 366,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/543-interpretar.html",
     "tenses": {
       "present": {
         "jo": "interpreto",
@@ -20291,6 +20613,7 @@
     "regular": true,
     "group": "ir",
     "rank": 367,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/708-discutir.html",
     "tenses": {
       "present": {
         "jo": "discuteixo",
@@ -20354,6 +20677,7 @@
     "regular": true,
     "group": "ar",
     "rank": 368,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1503-tapar.html",
     "tenses": {
       "present": {
         "jo": "tapo",
@@ -20417,6 +20741,7 @@
     "regular": true,
     "group": "er",
     "rank": 369,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/279-convencer.html",
     "tenses": {
       "present": {
         "jo": "convenço",
@@ -20480,6 +20805,7 @@
     "regular": true,
     "group": "ar",
     "rank": 370,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/967-revelar.html",
     "tenses": {
       "present": {
         "jo": "revelo",
@@ -20543,6 +20869,7 @@
     "regular": true,
     "group": "ar",
     "rank": 371,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1201-retornar.html",
     "tenses": {
       "present": {
         "jo": "retorno",
@@ -20606,6 +20933,7 @@
     "regular": true,
     "group": "ar",
     "rank": 372,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1152-concentrar.html",
     "tenses": {
       "present": {
         "jo": "concentro",
@@ -20669,6 +20997,7 @@
     "regular": true,
     "group": "ar",
     "rank": 373,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1055-adoptar.html",
     "tenses": {
       "present": {
         "jo": "adopto",
@@ -20732,6 +21061,7 @@
     "regular": true,
     "group": "ir",
     "rank": 375,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/440-assistir.html",
     "tenses": {
       "present": {
         "jo": "assisteixo",
@@ -20795,6 +21125,7 @@
     "regular": true,
     "group": "ar",
     "rank": 376,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/142-cansar.html",
     "tenses": {
       "present": {
         "jo": "canso",
@@ -20858,6 +21189,7 @@
     "regular": true,
     "group": "ir",
     "rank": 377,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/465-agrair.html",
     "tenses": {
       "present": {
         "jo": "agraeixo",
@@ -20921,6 +21253,7 @@
     "regular": true,
     "group": "ir",
     "rank": 378,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/601-coincidir.html",
     "tenses": {
       "present": {
         "jo": "coincideixo",
@@ -20984,6 +21317,7 @@
     "regular": true,
     "group": "ir",
     "rank": 379,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/752-reflectir.html",
     "tenses": {
       "present": {
         "jo": "reflecteixo",
@@ -21047,6 +21381,7 @@
     "regular": true,
     "group": "ar",
     "rank": 380,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/153-viatjar.html",
     "tenses": {
       "present": {
         "jo": "viatjo",
@@ -21110,6 +21445,7 @@
     "regular": true,
     "group": "ar",
     "rank": 381,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/658-rebutjar.html",
     "tenses": {
       "present": {
         "jo": "rebutjo",
@@ -21173,6 +21509,7 @@
     "regular": true,
     "group": "ar",
     "rank": 382,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/757-sospirar.html",
     "tenses": {
       "present": {
         "jo": "sospiro",
@@ -21236,6 +21573,7 @@
     "regular": true,
     "group": "er",
     "rank": 383,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/557-mereixer.html",
     "tenses": {
       "present": {
         "jo": "mereixo",
@@ -21299,6 +21637,7 @@
     "regular": true,
     "group": "ar",
     "rank": 384,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/803-elevar.html",
     "tenses": {
       "present": {
         "jo": "elevo",
@@ -21362,6 +21701,7 @@
     "regular": true,
     "group": "ar",
     "rank": 385,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/740-transformar.html",
     "tenses": {
       "present": {
         "jo": "transformo",
@@ -21425,6 +21765,7 @@
     "regular": true,
     "group": "ar",
     "rank": 386,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1095-enfilar.html",
     "tenses": {
       "present": {
         "jo": "enfilo",
@@ -21488,6 +21829,7 @@
     "regular": true,
     "group": "ar",
     "rank": 387,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1126-esclatar.html",
     "tenses": {
       "present": {
         "jo": "esclato",
@@ -21551,6 +21893,7 @@
     "regular": true,
     "group": "ar",
     "rank": 388,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/680-respectar.html",
     "tenses": {
       "present": {
         "jo": "respecto",
@@ -21614,6 +21957,7 @@
     "regular": true,
     "group": "ar",
     "rank": 389,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/168-pesar.html",
     "tenses": {
       "present": {
         "jo": "peso",
@@ -21677,6 +22021,7 @@
     "regular": true,
     "group": "ar",
     "rank": 392,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/802-acomiadar.html",
     "tenses": {
       "present": {
         "jo": "acomiado",
@@ -21740,6 +22085,7 @@
     "regular": true,
     "group": "ir",
     "rank": 393,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/725-consistir.html",
     "tenses": {
       "present": {
         "jo": "consisteixo",
@@ -21803,6 +22149,7 @@
     "regular": true,
     "group": "er",
     "rank": 394,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/448-vencer.html",
     "tenses": {
       "present": {
         "jo": "venço",
@@ -21866,6 +22213,7 @@
     "regular": true,
     "group": "ar",
     "rank": 395,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/636-tombar.html",
     "tenses": {
       "present": {
         "jo": "tombo",
@@ -21929,6 +22277,7 @@
     "regular": true,
     "group": "ar",
     "rank": 396,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1210-tomar.html",
     "tenses": {
       "present": {
         "jo": "tomo",
@@ -21992,6 +22341,7 @@
     "regular": true,
     "group": "ir",
     "rank": 397,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/509-sostenir.html",
     "tenses": {
       "present": {
         "jo": "sostinc",
@@ -22055,6 +22405,7 @@
     "regular": true,
     "group": "ar",
     "rank": 399,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/841-muntar.html",
     "tenses": {
       "present": {
         "jo": "munto",
@@ -22118,6 +22469,7 @@
     "regular": true,
     "group": "ar",
     "rank": 400,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/138-besar.html",
     "tenses": {
       "present": {
         "jo": "beso",
@@ -22181,6 +22533,7 @@
     "regular": true,
     "group": "er",
     "rank": 401,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/503-plaure.html",
     "tenses": {
       "present": {
         "jo": "plac",
@@ -22244,6 +22597,7 @@
     "regular": true,
     "group": "ir",
     "rank": 402,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/525-aclarir.html",
     "tenses": {
       "present": {
         "jo": "aclareixo",
@@ -22307,6 +22661,7 @@
     "regular": true,
     "group": "ar",
     "rank": 406,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/433-aprovar.html",
     "tenses": {
       "present": {
         "jo": "aprovo",
@@ -22370,6 +22725,7 @@
     "regular": true,
     "group": "ar",
     "rank": 407,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/95-ballar.html",
     "tenses": {
       "present": {
         "jo": "ballo",
@@ -22433,6 +22789,7 @@
     "regular": true,
     "group": "ar",
     "rank": 408,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/555-odiar.html",
     "tenses": {
       "present": {
         "jo": "odio",
@@ -22496,6 +22853,7 @@
     "regular": true,
     "group": "ar",
     "rank": 409,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1005-proporcionar.html",
     "tenses": {
       "present": {
         "jo": "proporciono",
@@ -22559,6 +22917,7 @@
     "regular": true,
     "group": "ar",
     "rank": 410,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/328-animar.html",
     "tenses": {
       "present": {
         "jo": "animo",
@@ -22622,6 +22981,7 @@
     "regular": true,
     "group": "ar",
     "rank": 411,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/151-rentar.html",
     "tenses": {
       "present": {
         "jo": "rento",
@@ -22685,6 +23045,7 @@
     "regular": true,
     "group": "ar",
     "rank": 412,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/496-ignorar.html",
     "tenses": {
       "present": {
         "jo": "ignoro",
@@ -22748,6 +23109,7 @@
     "regular": true,
     "group": "ar",
     "rank": 413,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/249-descansar.html",
     "tenses": {
       "present": {
         "jo": "descanso",
@@ -22811,6 +23173,7 @@
     "regular": true,
     "group": "er",
     "rank": 414,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/863-atreure.html",
     "tenses": {
       "present": {
         "jo": "atrec",
@@ -22874,6 +23237,7 @@
     "regular": true,
     "group": "ar",
     "rank": 415,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/275-collaborar.html",
     "tenses": {
       "present": {
         "jo": "col·laboro",
@@ -22937,6 +23301,7 @@
     "regular": true,
     "group": "ir",
     "rank": 416,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/326-assolir.html",
     "tenses": {
       "present": {
         "jo": "assoleixo",
@@ -23000,6 +23365,7 @@
     "regular": true,
     "group": "ir",
     "rank": 417,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/780-atribuir.html",
     "tenses": {
       "present": {
         "jo": "atribueixo",
@@ -23063,6 +23429,7 @@
     "regular": true,
     "group": "ar",
     "rank": 418,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1136-titular.html",
     "tenses": {
       "present": {
         "jo": "titulo",
@@ -23126,6 +23493,7 @@
     "regular": true,
     "group": "ar",
     "rank": 419,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1637-xiuxiuejar.html",
     "tenses": {
       "present": {
         "jo": "xiuxiuejo",
@@ -23189,6 +23557,7 @@
     "regular": true,
     "group": "ar",
     "rank": 420,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/217-enganyar.html",
     "tenses": {
       "present": {
         "jo": "enganyo",
@@ -23252,6 +23621,7 @@
     "regular": true,
     "group": "ar",
     "rank": 421,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/2241-recolzar.html",
     "tenses": {
       "present": {
         "jo": "recolzo",
@@ -23315,6 +23685,7 @@
     "regular": true,
     "group": "ir",
     "rank": 422,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/321-suggerir.html",
     "tenses": {
       "present": {
         "jo": "suggereixo",
@@ -23378,6 +23749,7 @@
     "regular": true,
     "group": "ar",
     "rank": 423,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/649-sospitar.html",
     "tenses": {
       "present": {
         "jo": "sospito",
@@ -23441,6 +23813,7 @@
     "regular": true,
     "group": "ar",
     "rank": 424,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/508-oposar.html",
     "tenses": {
       "present": {
         "jo": "oposo",
@@ -23504,6 +23877,7 @@
     "regular": true,
     "group": "ir",
     "rank": 426,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/727-perseguir.html",
     "tenses": {
       "present": {
         "jo": "persegueixo",
@@ -23567,6 +23941,7 @@
     "regular": true,
     "group": "ar",
     "rank": 427,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1169-reclamar.html",
     "tenses": {
       "present": {
         "jo": "reclamo",
@@ -23630,6 +24005,7 @@
     "regular": true,
     "group": "ar",
     "rank": 428,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1029-jurar.html",
     "tenses": {
       "present": {
         "jo": "juro",
@@ -23693,6 +24069,7 @@
     "regular": true,
     "group": "ar",
     "rank": 429,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/592-integrar.html",
     "tenses": {
       "present": {
         "jo": "integro",
@@ -23756,6 +24133,7 @@
     "regular": true,
     "group": "ar",
     "rank": 430,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1129-assassinar.html",
     "tenses": {
       "present": {
         "jo": "assassino",
@@ -23819,6 +24197,7 @@
     "regular": true,
     "group": "ar",
     "rank": 431,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/258-molestar.html",
     "tenses": {
       "present": {
         "jo": "molesto",
@@ -23882,6 +24261,7 @@
     "regular": true,
     "group": "er",
     "rank": 432,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/648-confondre.html",
     "tenses": {
       "present": {
         "jo": "confonc",
@@ -23945,6 +24325,7 @@
     "regular": true,
     "group": "ar",
     "rank": 434,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/2231-desesperar.html",
     "tenses": {
       "present": {
         "jo": "desespero",
@@ -24008,6 +24389,7 @@
     "regular": true,
     "group": "ar",
     "rank": 435,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/603-sacsejar.html",
     "tenses": {
       "present": {
         "jo": "sacsejo",
@@ -24071,6 +24453,7 @@
     "regular": true,
     "group": "ar",
     "rank": 436,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/643-enterrar.html",
     "tenses": {
       "present": {
         "jo": "enterro",
@@ -24134,6 +24517,7 @@
     "regular": true,
     "group": "ar",
     "rank": 437,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/2422-arronsar.html",
     "tenses": {
       "present": {
         "jo": "arronso",
@@ -24197,6 +24581,7 @@
     "regular": true,
     "group": "ar",
     "rank": 438,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1775-amoinar.html",
     "tenses": {
       "present": {
         "jo": "amoïno",
@@ -24260,6 +24645,7 @@
     "regular": true,
     "group": "ar",
     "rank": 439,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/791-regular.html",
     "tenses": {
       "present": {
         "jo": "regulo",
@@ -24323,6 +24709,7 @@
     "regular": true,
     "group": "ar",
     "rank": 440,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/836-manar.html",
     "tenses": {
       "present": {
         "jo": "mano",
@@ -24386,6 +24773,7 @@
     "regular": true,
     "group": "ir",
     "rank": 442,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/538-assumir.html",
     "tenses": {
       "present": {
         "jo": "assumeixo",
@@ -24449,6 +24837,7 @@
     "regular": true,
     "group": "ar",
     "rank": 443,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/229-atrapar.html",
     "tenses": {
       "present": {
         "jo": "atrapo",
@@ -24512,6 +24901,7 @@
     "regular": true,
     "group": "ar",
     "rank": 444,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/549-millorar.html",
     "tenses": {
       "present": {
         "jo": "milloro",
@@ -24575,6 +24965,7 @@
     "regular": true,
     "group": "ir",
     "rank": 445,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/927-repartir.html",
     "tenses": {
       "present": {
         "jo": "reparteixo",
@@ -24638,6 +25029,7 @@
     "regular": true,
     "group": "ar",
     "rank": 446,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1120-facilitar.html",
     "tenses": {
       "present": {
         "jo": "facilito",
@@ -24701,6 +25093,7 @@
     "regular": true,
     "group": "ar",
     "rank": 447,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/130-somiar.html",
     "tenses": {
       "present": {
         "jo": "somio",
@@ -24764,6 +25157,7 @@
     "regular": true,
     "group": "ir",
     "rank": 448,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/512-contribuir.html",
     "tenses": {
       "present": {
         "jo": "contribueixo",
@@ -24827,6 +25221,7 @@
     "regular": true,
     "group": "ar",
     "rank": 449,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/373-comparar.html",
     "tenses": {
       "present": {
         "jo": "comparo",
@@ -24890,6 +25285,7 @@
     "regular": true,
     "group": "ar",
     "rank": 450,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/313-gastar.html",
     "tenses": {
       "present": {
         "jo": "gasto",
@@ -24953,6 +25349,7 @@
     "regular": true,
     "group": "ar",
     "rank": 451,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/145-esmorzar.html",
     "tenses": {
       "present": {
         "jo": "esmorzo",
@@ -25016,6 +25413,7 @@
     "regular": true,
     "group": "ar",
     "rank": 452,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/479-inventar.html",
     "tenses": {
       "present": {
         "jo": "invento",
@@ -25079,6 +25477,7 @@
     "regular": true,
     "group": "ar",
     "rank": 453,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/400-netejar.html",
     "tenses": {
       "present": {
         "jo": "netejo",
@@ -25142,6 +25541,7 @@
     "regular": true,
     "group": "ar",
     "rank": 454,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1664-rumiar.html",
     "tenses": {
       "present": {
         "jo": "rumio",
@@ -25205,6 +25605,7 @@
     "regular": true,
     "group": "ir",
     "rank": 455,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/305-divertir.html",
     "tenses": {
       "present": {
         "jo": "diverteixo",
@@ -25268,6 +25669,7 @@
     "regular": true,
     "group": "ar",
     "rank": 456,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/790-inspirar.html",
     "tenses": {
       "present": {
         "jo": "inspiro",
@@ -25331,6 +25733,7 @@
     "regular": true,
     "group": "ar",
     "rank": 457,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/412-citar.html",
     "tenses": {
       "present": {
         "jo": "cito",
@@ -25394,6 +25797,7 @@
     "regular": true,
     "group": "ir",
     "rank": 458,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/492-detenir.html",
     "tenses": {
       "present": {
         "jo": "detinc",
@@ -25457,6 +25861,7 @@
     "regular": true,
     "group": "ar",
     "rank": 459,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/286-arreglar.html",
     "tenses": {
       "present": {
         "jo": "arreglo",
@@ -25520,6 +25925,7 @@
     "regular": true,
     "group": "ar",
     "rank": 461,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/531-brillar.html",
     "tenses": {
       "present": {
         "jo": "brillo",
@@ -25583,6 +25989,7 @@
     "regular": true,
     "group": "ir",
     "rank": 462,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/375-procedir.html",
     "tenses": {
       "present": {
         "jo": "procedeixo",
@@ -25646,6 +26053,7 @@
     "regular": true,
     "group": "ar",
     "rank": 464,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/833-criar.html",
     "tenses": {
       "present": {
         "jo": "crio",
@@ -25709,6 +26117,7 @@
     "regular": true,
     "group": "er",
     "rank": 466,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/917-estrenyer.html",
     "tenses": {
       "present": {
         "jo": "estrenyo",
@@ -25772,6 +26181,7 @@
     "regular": true,
     "group": "ir",
     "rank": 467,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/90-traduir.html",
     "tenses": {
       "present": {
         "jo": "tradueixo",
@@ -25835,6 +26245,7 @@
     "regular": true,
     "group": "ir",
     "rank": 468,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/562-afavorir.html",
     "tenses": {
       "present": {
         "jo": "afavoreixo",
@@ -25898,6 +26309,7 @@
     "regular": true,
     "group": "ar",
     "rank": 469,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/896-torrar.html",
     "tenses": {
       "present": {
         "jo": "torro",
@@ -25961,6 +26373,7 @@
     "regular": true,
     "group": "er",
     "rank": 471,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/777-premer.html",
     "tenses": {
       "present": {
         "jo": "premo",
@@ -26024,6 +26437,7 @@
     "regular": true,
     "group": "ar",
     "rank": 472,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/163-pintar.html",
     "tenses": {
       "present": {
         "jo": "pinto",
@@ -26087,6 +26501,7 @@
     "regular": true,
     "group": "ar",
     "rank": 474,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/199-dibuixar.html",
     "tenses": {
       "present": {
         "jo": "dibuixo",
@@ -26150,6 +26565,7 @@
     "regular": true,
     "group": "ar",
     "rank": 475,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/739-registrar.html",
     "tenses": {
       "present": {
         "jo": "registro",
@@ -26213,6 +26629,7 @@
     "regular": true,
     "group": "ar",
     "rank": 476,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/623-admirar.html",
     "tenses": {
       "present": {
         "jo": "admiro",
@@ -26276,6 +26693,7 @@
     "regular": true,
     "group": "ar",
     "rank": 478,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/510-experimentar.html",
     "tenses": {
       "present": {
         "jo": "experimento",
@@ -26339,6 +26757,7 @@
     "regular": true,
     "group": "ar",
     "rank": 479,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/460-generar.html",
     "tenses": {
       "present": {
         "jo": "genero",
@@ -26402,6 +26821,7 @@
     "regular": true,
     "group": "ar",
     "rank": 480,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/713-aportar.html",
     "tenses": {
       "present": {
         "jo": "aporto",
@@ -26465,6 +26885,7 @@
     "regular": true,
     "group": "er",
     "rank": 481,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/912-pondre.html",
     "tenses": {
       "present": {
         "jo": "ponc",
@@ -26528,6 +26949,7 @@
     "regular": true,
     "group": "ar",
     "rank": 485,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/2454-topar.html",
     "tenses": {
       "present": {
         "jo": "topo",
@@ -26591,6 +27013,7 @@
     "regular": true,
     "group": "er",
     "rank": 486,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/425-sobreviure.html",
     "tenses": {
       "present": {
         "jo": "sobrevisc",
@@ -26654,6 +27077,7 @@
     "regular": true,
     "group": "ir",
     "rank": 487,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/677-accedir.html",
     "tenses": {
       "present": {
         "jo": "accedeixo",
@@ -26717,6 +27141,7 @@
     "regular": true,
     "group": "ir",
     "rank": 488,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/224-mentir.html",
     "tenses": {
       "present": {
         "jo": "menteixo",
@@ -26780,6 +27205,7 @@
     "regular": true,
     "group": "ar",
     "rank": 489,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/704-analitzar.html",
     "tenses": {
       "present": {
         "jo": "analitzo",
@@ -26843,6 +27269,7 @@
     "regular": true,
     "group": "ar",
     "rank": 490,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/480-barrejar.html",
     "tenses": {
       "present": {
         "jo": "barrejo",
@@ -26906,6 +27333,7 @@
     "regular": true,
     "group": "ir",
     "rank": 491,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/597-obeir.html",
     "tenses": {
       "present": {
         "jo": "obeeixo",
@@ -26969,6 +27397,7 @@
     "regular": true,
     "group": "ar",
     "rank": 492,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/311-calcular.html",
     "tenses": {
       "present": {
         "jo": "calculo",
@@ -27032,6 +27461,7 @@
     "regular": true,
     "group": "ir",
     "rank": 493,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/918-eixir.html",
     "tenses": {
       "present": {
         "jo": "ixo",
@@ -27095,6 +27525,7 @@
     "regular": true,
     "group": "er",
     "rank": 494,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/552-percebre.html",
     "tenses": {
       "present": {
         "jo": "percebo",
@@ -27158,6 +27589,7 @@
     "regular": true,
     "group": "ar",
     "rank": 495,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/909-reposar.html",
     "tenses": {
       "present": {
         "jo": "reposo",
@@ -27221,6 +27653,7 @@
     "regular": true,
     "group": "ar",
     "rank": 496,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/866-esbrinar.html",
     "tenses": {
       "present": {
         "jo": "esbrino",
@@ -27284,6 +27717,7 @@
     "regular": true,
     "group": "ar",
     "rank": 497,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/122-fumar.html",
     "tenses": {
       "present": {
         "jo": "fumo",
@@ -27347,6 +27781,7 @@
     "regular": true,
     "group": "ar",
     "rank": 498,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/493-circular.html",
     "tenses": {
       "present": {
         "jo": "circulo",
@@ -27410,6 +27845,7 @@
     "regular": true,
     "group": "er",
     "rank": 499,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/978-comprometre.html",
     "tenses": {
       "present": {
         "jo": "comprometo",
@@ -27473,6 +27909,7 @@
     "regular": true,
     "group": "ar",
     "rank": 502,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/262-estalviar.html",
     "tenses": {
       "present": {
         "jo": "estalvio",
@@ -27536,6 +27973,7 @@
     "regular": true,
     "group": "ir",
     "rank": 503,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1533-presidir.html",
     "tenses": {
       "present": {
         "jo": "presideixo",
@@ -27599,6 +28037,7 @@
     "regular": true,
     "group": "ar",
     "rank": 504,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/697-eliminar.html",
     "tenses": {
       "present": {
         "jo": "elimino",
@@ -27662,6 +28101,7 @@
     "regular": true,
     "group": "ir",
     "rank": 505,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/681-garantir.html",
     "tenses": {
       "present": {
         "jo": "garanteixo",
@@ -27725,6 +28165,7 @@
     "regular": true,
     "group": "ar",
     "rank": 506,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/975-denunciar.html",
     "tenses": {
       "present": {
         "jo": "denuncio",
@@ -27788,6 +28229,7 @@
     "regular": true,
     "group": "ar",
     "rank": 507,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/231-calmar.html",
     "tenses": {
       "present": {
         "jo": "calmo",
@@ -27851,6 +28293,7 @@
     "regular": true,
     "group": "ar",
     "rank": 508,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/115-encantar.html",
     "tenses": {
       "present": {
         "jo": "encanto",
@@ -27914,6 +28357,7 @@
     "regular": true,
     "group": "ar",
     "rank": 509,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1982-assabentar.html",
     "tenses": {
       "present": {
         "jo": "assabento",
@@ -27977,6 +28421,7 @@
     "regular": true,
     "group": "er",
     "rank": 510,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/591-transmetre.html",
     "tenses": {
       "present": {
         "jo": "transmeto",
@@ -28040,6 +28485,7 @@
     "regular": true,
     "group": "ir",
     "rank": 511,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1882-ajupir.html",
     "tenses": {
       "present": {
         "jo": "ajupo",
@@ -28103,6 +28549,7 @@
     "regular": true,
     "group": "ar",
     "rank": 513,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1451-subjectar.html",
     "tenses": {
       "present": {
         "jo": "subjecto",
@@ -28166,6 +28613,7 @@
     "regular": true,
     "group": "ir",
     "rank": 514,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1081-retenir.html",
     "tenses": {
       "present": {
         "jo": "retinc",
@@ -28229,6 +28677,7 @@
     "regular": true,
     "group": "ar",
     "rank": 515,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/126-nedar.html",
     "tenses": {
       "present": {
         "jo": "nedo",
@@ -28292,6 +28741,7 @@
     "regular": true,
     "group": "ir",
     "rank": 516,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/616-dividir.html",
     "tenses": {
       "present": {
         "jo": "divideixo",
@@ -28355,6 +28805,7 @@
     "regular": true,
     "group": "ar",
     "rank": 517,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/241-cobrar.html",
     "tenses": {
       "present": {
         "jo": "cobro",
@@ -28418,6 +28869,7 @@
     "regular": true,
     "group": "ar",
     "rank": 518,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/227-jutjar.html",
     "tenses": {
       "present": {
         "jo": "jutjo",
@@ -28481,6 +28933,7 @@
     "regular": true,
     "group": "ar",
     "rank": 520,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/926-adequar.html",
     "tenses": {
       "present": {
         "jo": "adequo",
@@ -28544,6 +28997,7 @@
     "regular": true,
     "group": "ar",
     "rank": 521,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/563-regalar.html",
     "tenses": {
       "present": {
         "jo": "regalo",
@@ -28607,6 +29061,7 @@
     "regular": true,
     "group": "ar",
     "rank": 522,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/867-condemnar.html",
     "tenses": {
       "present": {
         "jo": "condemno",
@@ -28670,6 +29125,7 @@
     "regular": true,
     "group": "ar",
     "rank": 523,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1738-alienar.html",
     "tenses": {
       "present": {
         "jo": "alieno",
@@ -28733,6 +29189,7 @@
     "regular": true,
     "group": "ar",
     "rank": 524,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/454-ampliar.html",
     "tenses": {
       "present": {
         "jo": "amplio",
@@ -28796,6 +29253,7 @@
     "regular": true,
     "group": "ar",
     "rank": 525,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1062-localitzar.html",
     "tenses": {
       "present": {
         "jo": "localitzo",
@@ -28859,6 +29317,7 @@
     "regular": true,
     "group": "ar",
     "rank": 526,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1168-reflexionar.html",
     "tenses": {
       "present": {
         "jo": "reflexiono",
@@ -28922,6 +29381,7 @@
     "regular": true,
     "group": "er",
     "rank": 527,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/71-ploure.html",
     "tenses": {
       "present": {
         "jo": "-",
@@ -28985,6 +29445,7 @@
     "regular": true,
     "group": "ir",
     "rank": 528,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/669-influir.html",
     "tenses": {
       "present": {
         "jo": "influeixo",
@@ -29048,6 +29509,7 @@
     "regular": true,
     "group": "ar",
     "rank": 529,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/527-xerrar.html",
     "tenses": {
       "present": {
         "jo": "xerro",
@@ -29111,6 +29573,7 @@
     "regular": true,
     "group": "er",
     "rank": 531,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/354-fotre.html",
     "tenses": {
       "present": {
         "jo": "foto",
@@ -29174,6 +29637,7 @@
     "regular": true,
     "group": "ir",
     "rank": 532,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/762-requerir.html",
     "tenses": {
       "present": {
         "jo": "requereixo",
@@ -29237,6 +29701,7 @@
     "regular": true,
     "group": "ir",
     "rank": 533,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/759-envair.html",
     "tenses": {
       "present": {
         "jo": "envaeixo",
@@ -29300,6 +29765,7 @@
     "regular": true,
     "group": "ar",
     "rank": 534,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1769-moblar.html",
     "tenses": {
       "present": {
         "jo": "moblo",
@@ -29363,6 +29829,7 @@
     "regular": true,
     "group": "er",
     "rank": 535,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/2008-contendre.html",
     "tenses": {
       "present": {
         "jo": "contenc",
@@ -29426,6 +29893,7 @@
     "regular": true,
     "group": "er",
     "rank": 536,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1372-desprendre.html",
     "tenses": {
       "present": {
         "jo": "desprenc",
@@ -29489,6 +29957,7 @@
     "regular": true,
     "group": "ar",
     "rank": 537,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/297-adaptar.html",
     "tenses": {
       "present": {
         "jo": "adapto",
@@ -29552,6 +30021,7 @@
     "regular": true,
     "group": "er",
     "rank": 538,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/774-ofendre.html",
     "tenses": {
       "present": {
         "jo": "ofenc",
@@ -29615,6 +30085,7 @@
     "regular": true,
     "group": "ar",
     "rank": 539,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/699-caracteritzar.html",
     "tenses": {
       "present": {
         "jo": "caracteritzo",
@@ -29678,6 +30149,7 @@
     "regular": true,
     "group": "ar",
     "rank": 540,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/852-valorar.html",
     "tenses": {
       "present": {
         "jo": "valoro",
@@ -29741,6 +30213,7 @@
     "regular": true,
     "group": "ir",
     "rank": 541,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/408-oir.html",
     "tenses": {
       "present": {
         "jo": "oeixo",
@@ -29804,6 +30277,7 @@
     "regular": true,
     "group": "ar",
     "rank": 542,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1406-designar.html",
     "tenses": {
       "present": {
         "jo": "designo",
@@ -29867,6 +30341,7 @@
     "regular": true,
     "group": "ar",
     "rank": 543,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/2408-xisclar.html",
     "tenses": {
       "present": {
         "jo": "xisclo",
@@ -29930,6 +30405,7 @@
     "regular": true,
     "group": "ir",
     "rank": 544,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/933-acollir.html",
     "tenses": {
       "present": {
         "jo": "acullo",
@@ -29993,6 +30469,7 @@
     "regular": true,
     "group": "ar",
     "rank": 545,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/185-aconsellar.html",
     "tenses": {
       "present": {
         "jo": "aconsello",
@@ -30056,6 +30533,7 @@
     "regular": true,
     "group": "ar",
     "rank": 547,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/807-alimentar.html",
     "tenses": {
       "present": {
         "jo": "alimento",
@@ -30119,6 +30597,7 @@
     "regular": true,
     "group": "er",
     "rank": 548,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/675-coure.html",
     "tenses": {
       "present": {
         "jo": "coc",
@@ -30182,6 +30661,7 @@
     "regular": true,
     "group": "ar",
     "rank": 549,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1493-barrar.html",
     "tenses": {
       "present": {
         "jo": "barro",
@@ -30245,6 +30725,7 @@
     "regular": true,
     "group": "ar",
     "rank": 552,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/535-apreciar.html",
     "tenses": {
       "present": {
         "jo": "aprecio",
@@ -30308,6 +30789,7 @@
     "regular": true,
     "group": "ar",
     "rank": 553,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1030-penetrar.html",
     "tenses": {
       "present": {
         "jo": "penetro",
@@ -30371,6 +30853,7 @@
     "regular": true,
     "group": "ar",
     "rank": 554,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/1069-encaixar.html",
     "tenses": {
       "present": {
         "jo": "encaixo",
@@ -30434,6 +30917,7 @@
     "regular": true,
     "group": "ar",
     "rank": 555,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/295-habitar.html",
     "tenses": {
       "present": {
         "jo": "habito",
@@ -30497,6 +30981,7 @@
     "regular": true,
     "group": "ar",
     "rank": 556,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/559-recomanar.html",
     "tenses": {
       "present": {
         "jo": "recomano",
@@ -30560,6 +31045,7 @@
     "regular": true,
     "group": "ar",
     "rank": 557,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/625-consultar.html",
     "tenses": {
       "present": {
         "jo": "consulto",
@@ -30623,6 +31109,7 @@
     "regular": true,
     "group": "er",
     "rank": 558,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/906-refer.html",
     "tenses": {
       "present": {
         "jo": "refaig",
@@ -30686,6 +31173,7 @@
     "regular": true,
     "group": "er",
     "rank": 559,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/462-compondre.html",
     "tenses": {
       "present": {
         "jo": "componc",
@@ -30749,6 +31237,7 @@
     "regular": true,
     "group": "ir",
     "rank": 560,
+    "sourceUrl": "https://www.verbs.cat/en/conjugation/674-entretenir.html",
     "tenses": {
       "present": {
         "jo": "entretinc",
